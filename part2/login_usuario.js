@@ -28,11 +28,11 @@ form.addEventListener("submit", e=>{
     }
 
     if (!expRegPass.test(pass.value)){
-        warningB += 'La contraseña no es válida <br>'
+        warningB += 'La contraseña no es válida <br> Primera letra mayuscula y debe contener al menos un número'
         entrar = true
     }
 
-    if (entrar){
+    if (entrar){        
         pEmail.innerHTML = warningA
         pPass.innerHTML = warningB
 
