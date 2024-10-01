@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+:root {
+    --primary: #eeeeee;
+    --secondary: #FF9966;
+    --green: #82cd47;
+    --secondary-light: rgba(250, 173, 143, 0.719);
+    --secondary-light-2: #f9d0c1;
+    --white: #fff;
+    --black: #393e46;
+    
+  
+    --shadow: 0px 2px 8px 0px var(--secondary-light);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary);
+
+}
+
+
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+
+}
+.navbar{
+    border-bottom: 1px solid #393e46
+}
+
+.profile-dropdown-list{
+    position: absolute;
+    top: 68px;
+    width: 220px;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+.profile-dropdown-list.active {
+    max-height: 500px;
+}
+
+.profile-dropdown-list hr{
+    border: .5px solid #ffb1b2;
+}
+
+.profile-dropdown-list-item{
+    padding: 0.5rem 0 0.5rem 1rem;
+    transition: background-color 0.2s, paading-left 0.2s;
+}
+
+.profile-dropdown-list-item:hover{
+    padding-left: 1.5rem;
+    background-color: #ffeaec;
+}
+
+.profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+/*/-------icons-------/*/
+.profile-dropdown-list-item a i{
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #FF5E62;
+    color: var(--white);
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.profile-dropdown-btn{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    /*border: 1px solid rgb(207, 207, 207);*/
+    border-radius: 50px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, border 0.3s;
+}
+
+.profile-dropdown-btn:hover{
+    box-shadow: var(--shadow);
+}
+
+.profile-dropdown-btn span{
+    margin: 0 0.5rem;
+    margin-right: 0;
+
+}
+
+.profile-img{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background: url(pics/PERFIK.png);
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
+.profile-img i{
+    position: relative;
+    right: 0;
+    bottom: 0.3rem;
+    font-size: 0.6rem;
+    color: var(--green);
+}
+.section{
+    position: relative;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+    background-color:rgb(250, 242, 242);
+    /*background-color: white;*/
+    padding: 20px;
+}
+.container-img{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.img-modelo{
+    height: auto;
+    width: 100%;
+    margin-left: 30px;
+    max-width: 100%;
+    box-shadow: 6px 10px 10px rgba(0, 2, 0, 0.1);
+    border-color: #393e46;
+    border-radius: 10px;
+}
+.container text{
+    width: 20%;
+    height: 70%;
+    margin-right: 100px;
+}
+
+.container-title{
+    margin-top: 50px;
+    border-bottom: 3px solid black;
+}
+#title{
+    font-size: 50px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text p {
+    margin-top: 40px;
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    margin-right: 70px;
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 1110px) {
+    .navbar{
+        padding-bottom: 70px;
+    }
+    .nav-extra {
+        padding-top: 80px;
+    }
+    .section {
+        flex-direction: column; /* Cambia la disposición de los elementos a una columna en pantallas más pequeñas */
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .container-img {
+        width: 90%; /* Ajusta el ancho del contenedor de imagen */
+        margin-left: 0; /* Centraliza el contenedor en la pantalla */
+    }
+
+    .img-modelo {
+        width: 100%; /* Ajusta la imagen al 100% del nuevo contenedor */
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .container-text {
+        width: 100%;
+        text-align: center; /* Centra el texto para pantallas más pequeñas */
+    }
+
+    #title {
+        font-size: 40px; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    .text p {
+        margin-right: 0;
+        font-size: 14px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
