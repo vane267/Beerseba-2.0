@@ -139,16 +139,17 @@ h3 {
     background-color: rgb(20, 20, 110);
 }
 
-.color-option.checked + .color-label{
+.color-option:checked + .color-label{
     border-color: black;
     border-radius: 100px;
-    transform: scale(1.2);
-}
-.color-label:hover{
-    /*background-color: rgb(238, 238, 238);*/
-    transform: scale(1.2);
+    transform: scale(1.1);
+    padding: 20px 20px;
 }
 
+.color-label:hover, .color-option:checked {
+    /*background-color: rgb(238, 238, 238);*/
+    transform: scale(1.1);
+}
 
 .size-option {
     width: 50px;

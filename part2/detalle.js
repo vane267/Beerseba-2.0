@@ -10,13 +10,10 @@ function validarCompra() {
 
     return res 
     }
-    // Función para incrementar la cantidad
 function agregaUno() {
     var currentValue = parseInt(document.getElementById('contador').value);
     document.getElementById('contador').value = currentValue + 1;
 }
-
-// Función para decrementar la cantidad
 function restaUno() {
     var currentValue = parseInt(document.getElementById('contador').value);
     if (currentValue > 1) {
