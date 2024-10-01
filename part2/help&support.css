@@ -162,26 +162,30 @@ form{
 
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    p {
-        font-size: 1rem;
-        padding: 20px;
+    .help {
+        flex-direction: column;  /* Cambiar a dirección de columna para pantallas pequeñas */
+        align-items: center;     /* Alinear el contenido al centro */
     }
     .help .row {
-        max-width: 90%;
+        width: 100%;             /* Asegurarse de que ocupe todo el ancho */
+        margin: 20px 0;          /* Añadir algo de margen vertical */
     }
-    #box, #text-box {
-        width: 100%;
+    form {
+        width: 100%;             /* Asegurarse de que el formulario ocupe todo el ancho */
     }
-    .form-btn {
-        width: 100%;
+    .image {
+        margin-left: 20px;          /* Centrar la imagen */
+        width: 90%;              /* Reducir el ancho de la imagen */
     }
 }
 
+
 @media (max-width: 480px) {
 
+    
+    .help{
+        float: column;
+    }
 
     h1 {
         font-size: 2rem;
