@@ -114,7 +114,7 @@
                   <h1>PANTALÓN RECTO DE BENGALINA</h1>
                   <p class="price">$15.000</p>
                   <p class="installments">Todos los medios de pago</p>
-                  <form action="*" name="form.detalles">
+                  <form action="Resumen_compra.html" name="form.detalles">
                       <div class="color-options">
                           <h3>COLOR</h3>
                           
@@ -156,7 +156,13 @@
                           <label for="010" class="size-label">10</label>
 
                       </div>
-                  </form>
+
+                      <div class="quantity">
+                        <button class="quantity-btn" id="disminuye" onclick="restaUno()">-</button>
+                        <input type="text" id="contador" value="1" readonly>
+                        <button class="quantity-btn"id="agrega" onclick="agregaUno()">+</button>
+                    </div>                 
+                
               
                   <label for="chk" class="guide-label"> GUIA DE TALLES +</label>
                   <input type="checkbox" id="chk">
@@ -200,23 +206,15 @@
                               <td>108</td>
                           </tr>
                       </table>
-                  </div>
+                    </div>
+                    <input class="btn-comprar" type="submit"  onclick="validarCompra(this)" value="Comprar">
+                </div>
+                </form>
+                <script src="detalle.js"></script>
 
-                  <div class="quantity">
-                      <button class="quantity-btn" id="disminuye" onclick="restaUno()">-</button>
-                      <input type="text" id="contador" value="1" readonly>
-                      <button class="quantity-btn"id="agrega" onclick="agregaUno()">+</button>
-                  </div>
-          
-              <a href="Resumen_compra.html"><button class="btn-comprar" onclick="validarCompra(this)">Comprar</button></a>
-          </div>
-
-
-              </div>
       </div>
     </section>
     </div>
-    <script src="detalle.js"></script>
 
 </body>
 </html>
