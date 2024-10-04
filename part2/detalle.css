@@ -7,7 +7,8 @@ body {
 }
 
 .navbar{
-    border-bottom: 1px solid rgb(151, 151, 151);
+    border-bottom: 1px solid rgb(212, 211, 211);    
+    margin-bottom: 20px;
 }
 
 .main-container {
@@ -20,7 +21,7 @@ body {
     max-width: 90%;
     margin: 20px auto 0 auto;
     border-radius: 20px;
-    
+
 }
 
 .product-container {
@@ -30,6 +31,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .1); /*sombra en todo el recuadro*/
     border-radius: 5px;
     margin: auto;    
+    margin-top: 20px;
 }
 
 .product-image img {
