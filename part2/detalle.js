@@ -10,6 +10,9 @@ function validarCompra() {
     }
     }
 
+
+/* Elegir cantidad */
+
 function agregaUno() {
     var currentValue = parseInt(document.getElementById('contador').value);
     document.getElementById('contador').value = currentValue + 1;
@@ -24,7 +27,7 @@ function restaUno() {
 
 function cargar_eventos(){
 
-    /* */
+    /* aun por definirse */
     document.getElementById("btn-comprar").addEventListener("click", validarCompra);
  
 }

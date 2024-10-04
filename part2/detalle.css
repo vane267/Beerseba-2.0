@@ -293,21 +293,23 @@ a{
     border: 1px solid #e6524c; /* Borde cuando está clickeado */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .main-container {
         max-width: 100%; /* Ocupa el ancho total de la pantalla */
         padding: 5px; /* Reduce el padding */
-        margin: 0 auto;
+        margin: auto;
         border-radius: 0px; /* Elimina los bordes redondeados en móviles */
     }
 
     .product-container {
         flex-direction: column; /* Pone la imagen y los detalles en una columna en lugar de una fila */
         max-width: 100%; 
+        margin: auto; 
+        text-align: center;
     }
 
     .product-image img {
-        width: 100%; /* Haz que la imagen ocupe todo el ancho de la pantalla */
+        width: 60%; /* Haz que la imagen ocupe todo el ancho de la pantalla */
         height: auto;
     }
 
