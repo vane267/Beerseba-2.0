@@ -119,7 +119,7 @@ body{
     position: relative;
     width: 2rem;
     height: 2rem;
-    background: url(pics/perfil.jpeg);
+    background: url(\pics\perfil.jpeg);
     border-radius: 50%;
     background-size: cover;
 

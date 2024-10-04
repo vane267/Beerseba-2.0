@@ -1,36 +1,13 @@
 
-.barra-superior {
-    background: linear-gradient(to right, #FF5E62, #FF9966);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    
-}
-
-nav {        
-    border: none;
-    background: white;
-    margin-bottom: 1.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    max-width: 100%;
-    padding: 10px 0;
-}     
-
-.logo{
-    max-width: 70%;
-    height: auto;
-}
-
 body {
     font-family: "Lato", sans-serif;
     background-color: #ededed;
     margin: 0;
     /*padding: 0;*/
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(151, 151, 151);
 }
 
 .main-container {
