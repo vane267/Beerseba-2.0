@@ -1,20 +1,10 @@
-body {
+body, html {
     background-color:#edededd0;
     margin: 0%;
     padding: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.barra-superior {
-    background: linear-gradient(to right, #FF5E62, #FF9966);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-family: "Lato", sans-serif;
-    
-}
 
 nav {        
     border: none;
@@ -111,7 +101,7 @@ footer {
     font-display: center;
 }
 h1 {
-
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
     font-size:28px;
     margin: 0%;
     padding-top: 15px;
@@ -124,6 +114,7 @@ h2 {
     padding-bottom: 7px;
 }
 p {
+    
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -131,6 +122,30 @@ p {
 .box2_2 p{
     flex-direction: column;
     margin-left: 15px;
+}
+
+
+.span01{
+    font-weight: 800;
+}
+
+.span02{
+    float: right;
+}
+
+.span03{
+    float: right;
+    font-style: italic;
+}
+
+.span04{
+    color: blue;
+}
+
+.p01{
+    color: rgb(164, 167, 170);
+    text-align: center;
+    font-size: small;
 }
 
 .input {
