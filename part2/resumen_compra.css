@@ -6,17 +6,9 @@ body, html {
 }
 
 
-nav {        
-    border: none;
-    background: white;
-    margin-bottom: 1.5%;
-    display: flex;
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center;
-    height: auto;
-    max-width: 100%;
-    padding: 10px 0;
-}     
+.navbar{
+    margin-bottom: 20px;
+}
 
 .logo{
     max-width: 100%;
