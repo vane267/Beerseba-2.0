@@ -52,7 +52,7 @@ body {
     background-color: white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .1); /*sombra en todo el recuadro*/
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin: auto;    
 }
 
 .product-image img {
@@ -69,6 +69,7 @@ body {
     margin-top: 50px;
     padding: 20px;
     flex-grow: 1;
+    
 }
 
 
@@ -142,7 +143,7 @@ h3 {
 .color-option:checked + .color-label{
     border-color: black;
     border-radius: 100px;
-    transform: scale(1.1);
+    transform: scale(1.2);
     padding: 20px 20px;
 }
 

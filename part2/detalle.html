@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="homepage2.css">
     <link rel="stylesheet" href="homepage (1).css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
+    
 </head>
+
 <body>
 
    <!--MENUU-->
@@ -102,20 +103,27 @@
         </nav>
         <script src="homepage2.js"></script>
     
+
+
     <hr>
-    <section class="product-container1">
-      <div class="main-container"> 
-          <div class="product-container">
-              <div class="product-image">
-                <!--<img src="C:\Users\Vanesa\Documents\Programacion Web (2do Cuatri)\01-02 HTML y CSS\01html\Beerseba\cute.jpg" alt="PANTALÓN RECTO DE BENGALINA">-->
-                <img src="pics/Recto de Bengalina .jpg" alt="Pantalón recto de bengalina">
-              </div>
-              <div class="product-details">
-                  <h1>PANTALÓN RECTO DE BENGALINA</h1>
-                  <p class="price">$15.000</p>
-                  <p class="installments">Todos los medios de pago</p>
-                  <form action="Resumen_compra.html" name="form.detalles">
-                      <div class="color-options">
+
+  <section class="product-container">
+    
+    <!-- Imagen -->
+    <div class="product-image">
+       <img src="pics/Recto de Bengalina .jpg" alt="Pantalón recto de bengalina">
+    </div>
+              
+    <div class="product-details">
+      <!-- Descripcion -->
+      <h1>PANTALÓN RECTO DE BENGALINA</h1>
+      <p class="price">$15.000</p>
+      <p class="installments">Todos los medios de pago</p>
+
+      <form name="form.detalles">
+                    
+        <!--Elegir color -->
+        <div class="color-options">
                           <h3>COLOR</h3>
                           
                           <input type= "radio" id="c1" class="color-option" name="color"/>
@@ -136,8 +144,10 @@
                           <input type= "radio" id="c6"  class="color-option" name="color"/>
                           <label for="c6" class="color-label" id="c6"></label>
 
-                      </div>
-                      <div class="size-options">
+        </div>
+                    
+        <!--Elegir tamaño -->
+        <div class="size-options">
                           <h3>TALLE</h3>
                           
                           <input type= "radio" id="05"class="size-option" name="talle"/>
@@ -155,64 +165,64 @@
                           <input type= "radio" id="010"class="size-option" name="talle"/>
                           <label for="010" class="size-label">10</label>
 
-                      </div>
+        </div>
 
-                      <div class="quantity">
-                        <input type="number" id="contador" value="1" >
-                    </div>                 
-                
-              
-                  <label for="chk" class="guide-label"> GUIA DE TALLES +</label>
-                  <input type="checkbox" id="chk">
-                  
-                  <div id="tabla" class="tb">   
-                      <table>
-                          <tr>
-                              <th>Talle</th>
-                              <th>Cintura (cm)</th>
-                              <th>Cadera (cm)</th>
-                              <th>Largo (cm)</th>
-                          </tr>
-                          <tr>
-                              <td>5</td>
-                              <td>82</td>
-                              <td>90</td>
-                              <td>97,5</td>
-                          </tr>
-                          <tr>
-                              <td>6</td>
-                              <td>86</td>
-                              <td>94</td>
-                              <td>99</td>
-                          </tr>
-                          <tr>
-                              <td>7</td>
-                              <td>92</td>
-                              <td>102</td>
-                              <td>102</td>
-                          </tr>
-                          <tr>
-                              <td>8</td>
-                              <td>96</td>
-                              <td>106</td>
-                              <td>104</td>
-                          </tr>
-                          <tr>
-                              <td>10</td>
-                              <td>100</td>
-                              <td>110</td>
-                              <td>108</td>
-                          </tr>
-                      </table>
-                    </div>
-                    <input class="btn-comprar" type="submit"  onclick="validarCompra(this)" value="Comprar">
-                </div>
-                </form>
-                <script src="detalle.js"></script>
+        <!--Elegir cantidad -->
+        <div class="quantity">
+          <input type="number" id="contador" value="1" >
+        </div>                 
+                       
+        <!-- Guia de talles -->
+        <label for="chk" class="guide-label"> GUIA DE TALLES +</label>
+        <input type="checkbox" id="chk">
+        <div id="tabla" class="tb">   
+                        <table>
+                            <tr>
+                                <th>Talle</th>
+                                <th>Cintura (cm)</th>
+                                <th>Cadera (cm)</th>
+                                <th>Largo (cm)</th>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>82</td>
+                                <td>90</td>
+                                <td>97,5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>86</td>
+                                <td>94</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>92</td>
+                                <td>102</td>
+                                <td>102</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>96</td>
+                                <td>106</td>
+                                <td>104</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>100</td>
+                                <td>110</td>
+                                <td>108</td>
+                            </tr>
+                        </table>
+        </div>
 
-      </div>
-    </section>
+        <!-- Boton Comprar -->
+        <button class="btn-comprar" onclick="validarCompra(this)" type="button">Comprar</button>
+      </form>
     </div>
+  </section>
+
+  <script src="detalle.js"></script>
 
 </body>
 </html>
