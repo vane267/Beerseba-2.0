@@ -33,15 +33,18 @@ nav {
     height: auto;
 }
 
+
+
 .box2 {
     /* Producto */
-    width: 55%;
+    max-width: 900px;
+    width: 40%;
     float: left;
     border: none;
     border-radius: 10px;
     background-color: white;
-    margin-left: 1.5%;
-    padding-left: 10px;
+    margin-left: 8%;
+    padding: 10px;
     padding-bottom: 15px;
 }
 .box2_1 {
@@ -49,6 +52,8 @@ nav {
     float: left; 
     border-style: none; 
     margin-left: 1%;
+    padding: 10px;
+    
 }
 
 .box2_1 img {
@@ -61,16 +66,12 @@ nav {
     /* Producto */
     float: left; 
     border-style: none; 
-    margin: 0%;
-    width: 70%;
+    margin: auto;
+    
     border-radius: 10px;
-    margin-top: 90px;
-    display: block;    /* Mantener en columna en pantallas grandes */
-    border-style: none;
-    margin: 0;
-    width: 70%;
-    border-radius: 10px;
-    margin-top: 90px;
+    
+
+    
 }
 
 
@@ -146,7 +147,7 @@ p {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .logo{
         justify-content: center;
         margin-left: 10%;
