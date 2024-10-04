@@ -16,7 +16,7 @@ form.addEventListener("submit", e=>{
     let ExpRegEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
     /*expresion regular para el email*/
     
-    let expRegPass = /^[A-Z][a-zA-Z0-9]\d./
+    let expRegPass = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
     /*Expresion regular para que la contraseña contenga la primera letra mayuscula y al menos un numero*/
     
     let entrar = false
@@ -32,10 +32,13 @@ form.addEventListener("submit", e=>{
         entrar = true
     }
 
-    if (entrar){        
+    if (entrar){
+                
         pEmail.innerHTML = warningA
         pPass.innerHTML = warningB
-
+        
+    } else {
+        window.location.href = "homepage2.html";
     }
 
 })
