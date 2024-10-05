@@ -27,6 +27,7 @@ nav {
 
 form{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .logo{
@@ -145,6 +146,7 @@ label{
 
 .w3-input :-ms-input-placeholder {
     color: rgb(255, 0, 0);
+    border-color: transparent;
 }
 
 .w3-input::before{
@@ -181,13 +183,10 @@ a{
     }
 
     .box3{
-  
             display: flex;
             flex-wrap: wrap;
-            background-color: #2196F3;
             padding: 10px;
             margin-bottom: 2%;
-            border-color: black;
             border-radius: 15px;
             text-align: left;
             background-color: white;
