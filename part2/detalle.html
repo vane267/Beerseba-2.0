@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="detalle.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -60,7 +60,7 @@
             
                     <ul class="profile-dropdown-list">
                       <li class="profile-dropdown-list-item">
-                        <a href="Edit_profile.html">
+                        <a href="#">
                           <i class="fa-regular fa-user"></i>
                           Editar Perfil
                         </a>
@@ -108,7 +108,8 @@
     
     <!-- Imagen -->
     <div class="product-image">
-       <img src="pics/Recto de Bengalina .jpg" alt="Pantalón recto de bengalina">
+       <!--<img src="pics/Recto de Bengalina .jpg" alt="Pantalón recto de bengalina">-->
+       <img src="pics/Recto de Bengalina .jpg"Pantalón recto de bengalina">
     </div>
               
     <div class="product-details">
@@ -141,6 +142,12 @@
                           <input type= "radio" id="c6"  class="color-option" name="color"/>
                           <label for="c6" class="color-label" id="c6"></label>
 
+                          <input type= "radio" id="c7"  class="color-option" name="color"/>
+                          <label for="c7" class="color-label" id="c7"></label>
+
+                          <input type= "radio" id="c8"  class="color-option" name="color"/>
+                          <label for="c8" class="color-label" id="c8"></label>
+
         </div>
                     
         <!--Elegir tamaño -->
@@ -164,13 +171,18 @@
 
         </div>
 
-        <!--Elegir cantidad -->
-        <div class="quantity">
-          <input type="number" id="contador" value="1" >
-        </div>                 
+          <!--Elegir cantidad -->
+        <div class="alinear">
+          <div class="quantity">
+            <input type="number" id="contador" value="1" min="1" >
+          </div>
+
+          <!-- Boton Comprar -->
+          <button class="btn-comprar" onclick="validarCompra(this)" type="button">Comprar</button>
+        </div>            
                        
         <!-- Guia de talles -->
-        <label for="chk" class="guide-label"> GUIA DE TALLES +</label>
+        <label for="chk" class="guide-label">GUIA DE TALLES +</label>
         <input type="checkbox" id="chk">
         <div id="tabla" class="tb">   
                         <table>
@@ -212,10 +224,16 @@
                             </tr>
                         </table>
         </div>
-
-        <!-- Boton Comprar -->
-        <button class="btn-comprar" onclick="validarCompra(this)" type="button">Comprar</button>
+        
       </form>
+      <div class="icon1">
+        <span class="material-symbols-outlined">lock</span>
+        <b>Tus datos protegidos</b>
+        <p>Tus datos cuidados durante toda la compra</p>
+
+        <b><span class="material-symbols-outlined">sync_alt</span>    Cambios y devoluciones</b>
+        <p>No se realizan devoluciones de prendas. Se realizan cambios por talle.</p>
+      </div>
     </div>
   </section>
 

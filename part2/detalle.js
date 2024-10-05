@@ -11,20 +11,6 @@ function validarCompra() {
     }
 
 
-/* Elegir cantidad */
-
-function agregaUno() {
-    var currentValue = parseInt(document.getElementById('contador').value);
-    document.getElementById('contador').value = currentValue + 1;
-}
-
-function restaUno() {
-    var currentValue = parseInt(document.getElementById('contador').value);
-    if (currentValue > 1) {
-        document.getElementById('contador').value = currentValue - 1;
-    }
-}
-
 function cargar_eventos(){
 
     /* aun por definirse */
