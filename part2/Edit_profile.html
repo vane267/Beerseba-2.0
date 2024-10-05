@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Edit_profile.css">
+</head>
+<body>
+
+        <!-- Barra superior -->
+        <div class="barra-superior">
+            <div class="contacto">
+                <span>+54 9 11 2338-4312</span> | 
+                <span>beersebaonline@gmail.com</span>
+            </div>
+            <div class="mayorista">
+                VENTA MAYORISTA TALLES ESPECIALES
+            </div>
+        </div>
+    
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="homepage2.html">INICIO</a>
+                <a href="soloprod.html">PRODUCTOS</a>
+                <a href="quienes somos.html">QUIÉNES SOMOS</a>
+            </div>
+            
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>  
+    
+            <div class="logo">
+                <a href="homepage2.html"><img src="pics\image-removebg-preview.png" alt="Beerseba Logo"></a>
+            </div>
+            <div class="nav-extra">
+                <div class="carrito">
+                    <span class="icono-carrito"> ♡ </span>
+                </div>
+                <input type="search" placeholder="Buscar">
+                
+                <div class="profile-dropdown">
+                    <div onclick="toggle()" class="profile-dropdown-btn">
+                      <div class="profile-img">
+                        <i class="fa-solid fa-circle"></i>
+                      </div>
+            
+                      <span
+                        >Victoria
+                        <i class="fa-solid fa-angle-down"></i>
+                      </span>
+                    </div>
+            
+                    <ul class="profile-dropdown-list">
+                      <li class="profile-dropdown-list-item">
+                        <a href="#">
+                          <i class="fa-regular fa-user"></i>
+                          Editar Perfil
+                        </a>
+                      </li> 
+  
+                      <li class="profile-dropdown-list-item">
+                        <a href="favoritos.html">
+                          <i class="fas fa-heart"></i>
+                          Favoritos
+                        </a>
+                      </li>
+            
+                      <li class="profile-dropdown-list-item">
+                        <a href="#">
+                          <i class="fa-solid fa-chart-line"></i>
+                          Mis Compras
+                        </a>
+                      </li>
+            
+                      <li class="profile-dropdown-list-item">
+                        <a href="help&support.html">
+                          <i class="fa-regular fa-circle-question"></i>
+                          Help & Support
+                        </a>
+                      </li>
+                      <hr />
+            
+                      <li class="profile-dropdown-list-item">
+                        <a href="homepage (1).html">
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          Log out
+                        </a>
+                      </li>
+                    </ul>
+                  </div>           
+                   
+    
+        </nav>
+        <script src="homepage2.js"></script>
+
+    
+        <form class="box3" action="prueba.php" method="get">
+
+            <div class="title">
+                <h3>Configuración de Cuente</h3>
+            </div>
+
+            <div class="profile-pic">
+                <img src="pics/perfil.jpeg" alt=""> <br><br>
+                <input type="file" name="imgUser" id="imguser">
+            </div>  
+
+            <div class="c01">
+                <label for="nom01" class="box1">Nombre:</label><br>
+                <input class="w3-input" type="text" value="Victoria"><br>
+
+                <label class="box1">Tipo de documento:</label><br>
+                <select class="w3-input" class="box1" title="Seleccione...">
+                    <option value="0"  selected>Seleccionar..</option>
+                    <option value="DNI">DNI</option>
+                    <option value="CARNET">Pasaporte</option>
+                </select><br>
+
+                <label class="box1">Celular:</label><br>
+                <input class="w3-input" type="text" value="11234567"><br>
+
+
+                <br><br><br>
+                <label class="box1">Contraseña:</label><br>
+                <input class="w3-input" type="password" value="●●●●●●●●●●"/><br>
+
+
+            </div>
+
+            <div class="c02">
+                <label for="nom01" class="box1">Apellido:</label><br>
+                <input class="w3-input" type="text" value="Rodriguez"><br>
+            
+                <label class="box1">N° de documento:</label><br>
+                <input class="w3-input" type="text" value="96123456"><br>
+
+                <br><br><br><br><br><br><br>
+                <label class="box1">Nueva Contraseña:</label><br>
+                <input class="w3-input" type="password"/><br>
+
+            </div>
+
+
+            <div class="lastbtn">
+                <button type="submit" class="box2"> <a href="homepage (1).html">Login In</button></a>
+            </div>
+
+        </form>
+
+  
+    
+</body>
+</html>
