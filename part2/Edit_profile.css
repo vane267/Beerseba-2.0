@@ -89,7 +89,7 @@ form{
     font-size: small;
     width: 80%;
     
-}*/
+}
 
 .box4{
     color: #aaa2a2;
@@ -98,7 +98,6 @@ form{
 
 .tittle{
     grid-area: header;
-    padding: 25px;
 }
 
 h3 {
@@ -107,6 +106,9 @@ h3 {
     text-align: center;
 }
 
+label{
+    font-weight: bolder;
+}
 
 .c01{
     grid-area: main;
@@ -141,8 +143,6 @@ h3 {
 }
 
 
-
-
 .w3-input :-ms-input-placeholder {
     color: rgb(255, 0, 0);
 }
@@ -167,6 +167,10 @@ p {
     margin-left: 5px;
 }
 
+a{
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     .logo{
         justify-content: center;
@@ -177,8 +181,21 @@ p {
     }
 
     .box3{
-        margin-left: 02%;
-        margin-right: 02%;
-    }
+  
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #2196F3;
+            padding: 10px;
+            margin-bottom: 2%;
+            border-color: black;
+            border-radius: 15px;
+            text-align: left;
+            background-color: white;
+            border: none;
+            font-size: small;
+            width: 80%;
+            
+        }
+
 }
 
