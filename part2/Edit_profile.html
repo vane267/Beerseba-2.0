@@ -102,8 +102,8 @@
     
         <form class="box3" action="prueba.php" method="get">
 
-            <div class="title">
-                <h3>Configuración de Cuente</h3>
+            <div class="grid-item item00">
+                <h3>Configuración de Cuenta</h3>
             </div>
 
             <div class="profile-pic">
@@ -111,9 +111,21 @@
                 <input type="file" name="imgUser" id="imguser">
             </div>  
 
-            <div class="c01">
+            <div class="grid-item item01">
                 <label for="nom01" class="box1">Nombre:</label><br>
                 <input class="w3-input" type="text" value="Victoria"><br>
+
+                <label for="nom01" class="box1">Apellido:</label><br>
+                <input class="w3-input" type="text" value="Rodriguez"><br>
+
+                <label class="box1">Celular:</label><br>
+                <input class="w3-input" type="number" value="11234567"><br>
+            </div>
+
+            <div class="grid-item item01-5">
+
+                <label class="box1">Email:</label><br>
+                <input class="w3-input" type="text" value="vicky05gmail.com"><br>
 
                 <label class="box1">Tipo de documento:</label><br>
                 <select class="w3-input" class="box1" title="Seleccione...">
@@ -121,33 +133,26 @@
                     <option value="DNI">DNI</option>
                     <option value="CARNET">Pasaporte</option>
                 </select><br>
-
-                <label class="box1">Celular:</label><br>
-                <input class="w3-input" type="text" value="11234567"><br>
-
-
-                <br><br><br>
-                <label class="box1">Contraseña:</label><br>
-                <input class="w3-input" type="password" value="●●●●●●●●●●"/><br>
-
-
-            </div>
-
-            <div class="c02">
-                <label for="nom01" class="box1">Apellido:</label><br>
-                <input class="w3-input" type="text" value="Rodriguez"><br>
             
                 <label class="box1">N° de documento:</label><br>
                 <input class="w3-input" type="text" value="96123456"><br>
 
-                <br><br><br><br><br><br><br>
-                <label class="box1">Nueva Contraseña:</label><br>
-                <input class="w3-input" type="password"/><br>
+                
+
+            </div>
+
+            <div class="grid-item item02">
+
+              <label class="box1">Contraseña:</label><br>
+              <input class="w3-input" type="password" value="●●●●●●●●●●"/><br>
+
+              <label class="box1">Nueva Contraseña:</label><br>
+              <input class="w3-input" type="password"/><br>
 
             </div>
 
 
-            <div class="lastbtn">
+            <div class="grid-item lastbtn">
                 <button type="submit" class="box2"> <a href="homepage2.html">Guardar Cambios</button></a>
             </div>
 
