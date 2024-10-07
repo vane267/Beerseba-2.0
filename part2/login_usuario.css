@@ -141,7 +141,7 @@ input:focus~label, input:valid~label{
 	width: 100%;
 }
 
-.barra::before{
+.barra{
 	content: "";
 	height: 1px;
 	width: 0%;
@@ -153,9 +153,27 @@ input:focus~label, input:valid~label{
 
 }
 
-input:focus~.barra::before{
+input:focus~.barra{
 	width: 100%;
 }
+
+
+.mailcss{
+	display: none;	
+}
+
+.passcss{
+	display: none;	
+}
+
+input:focus~.mailcss{
+	display: block;
+}
+
+input:focus~.passcss{
+	display: block;
+}
+
 
 .forget {
 	display: flex;
