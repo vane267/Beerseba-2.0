@@ -32,6 +32,7 @@ body {
     border-radius: 5px;
     margin: auto;    
     margin-top: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .product-image img {
@@ -271,14 +272,22 @@ a{
     }
 
     .product-container {
+        position: relative;
         flex-direction: column; /* Pone la imagen y los detalles en una columna en lugar de una fila */
-        max-width: 100%; 
+        width: 70%; 
         margin: auto; 
         text-align: center;
+            display: flex;
+            background-color: white;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, .1); /*sombra en todo el recuadro*/
+            border-radius: 5px;
+            margin: auto;    
+            margin-top: 20px;
+    
     }
 
     .product-image img {
-        width: 60%; /* Haz que la imagen ocupe todo el ancho de la pantalla */
+        width: 100%; /* Haz que la imagen ocupe todo el ancho de la pantalla */
         height: auto;
     }
 
@@ -300,9 +309,9 @@ a{
     }
 
     .btn-comprar {
-        width: 100%; /* Botón de comprar ocupa todo el ancho */
+        width: auto;        
         font-size: 14px; /* Reduce el tamaño de fuente */
-        margin-right: 50px;
+        margin-right: 100px;
         margin-left: 1%;
         padding-left: 145px ;
         padding-right: 145px;
@@ -342,6 +351,22 @@ a{
 
 
 @media only screen and (max-width: 600px) {
+
+
+    .product-container {
+        position: relative;
+        flex-direction: column; /* Pone la imagen y los detalles en una columna en lugar de una fila */
+        width: 95%; 
+        margin: auto; 
+        text-align: center;
+            display: flex;
+            background-color: white;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, .1); /*sombra en todo el recuadro*/
+            border-radius: 5px;
+            margin: auto;    
+            margin-top: 20px;
+    
+    }
 
     #chk:checked + #tabla{
         
