@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-</head>
+    <script language="javascript" type="text/javascript" src="detalle.js"></script>
+  </head>
 
-<body>
+<body id="cuerpo_1" onload="cargar_eventos()">
 
    <!--MENUU-->
 
@@ -26,24 +27,29 @@
         </div>
     
         <!-- Barra de navegación -->
-        <nav class="navbar">
-            <div id="mySidebar" class="sidebar">
+        <nav class="navbar" id="nav-bar">
+          
+          <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="homepage2.html">INICIO</a>
                 <a href="soloprod.html">PRODUCTOS</a>
                 <a href="quienes somos.html">QUIÉNES SOMOS</a>
-            </div>
+                <a id="pegar_1"></a>
+          </div>
             
-            <div id="main">
+          <div id="main">
                 <button class="openbtn" onclick="openNav()">☰</button>  
     
-            <div class="logo">
+          <div class="logo">
                 <img src="pics\image-removebg-preview.png" alt="Beerseba Logo">
-            </div>
-            <div class="nav-extra">
+          </div>
+
+          <div class="nav-extra" id="nav-adicional">
+
                 <div class="carrito">
                     <span class="icono-carrito"> ♡ </span>
                 </div>
+
                 <input type="search" placeholder="Buscar">
                 
                 <div class="profile-dropdown">
@@ -95,10 +101,11 @@
                         </a>
                       </li>
                     </ul>
-                  </div>           
+          </div>           
                    
     
         </nav>
+        
         <script src="homepage2.js"></script>
     
 
@@ -178,7 +185,7 @@
           </div>
 
           <!-- Boton Comprar -->
-          <button class="btn-comprar" onclick="validarCompra(this)" type="button">Comprar</button>
+          <button class="btn-comprar" id="button_prueba" type="button">Comprar</button>
         </div>            
                        
         <!-- Guia de talles -->
@@ -237,7 +244,7 @@
     </div>
   </section>
 
-  <script src="detalle.js"></script>
+  
 
 </body>
 </html>
