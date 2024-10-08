@@ -34,7 +34,9 @@ form{
     height: auto;
 }
 
-
+hr{
+    padding: 0;
+}
 
 .box2 {
 
@@ -207,10 +209,14 @@ a{
 @media screen and (max-width: 1000px) {
     .logo{
         justify-content: center;
-        margin-left: 10%;
+        width: 100%;
+        padding: 0;
     }
     .logo img{
-        max-width: 80%;
+        max-width: 70%;
+        margin-left: 80%;
+        margin-top: 0; margin-bottom: 0;
+
     }
 
     .item00{
@@ -308,11 +314,13 @@ a{
 
 @media screen and (max-width: 600px) {
     .logo{
-        justify-content: center;
-        margin-left: 10%;
+        width: 70%;;
+        margin-right: 45%;
+        padding-top: 0;
+        margin-bottom: 10%;
     }
     .logo img{
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .item00{
