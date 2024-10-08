@@ -109,10 +109,10 @@ span{
 
 .input-field label{
 	 position: absolute;
-	 color: #00000050;
+	 color: #000000;
 	 top: 30%; 
 	 left: 0;
-	 transform: translateY(-50%);
+	 transform: translateY(-80%);
 	 font-size: 15px;
 	 pointer-events: none;
 	 transition: 0.15s ease-in-out all;
