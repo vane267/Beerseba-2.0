@@ -8,7 +8,8 @@ Permite incluir:
 -Caracteres alfabeticos ("Ñ, ñ y ü").
 -Uso de prep, contrac. y art.
 -Uso de Iniciales. */
-const pattern_nombre = /([\w\.]+)@([\w\.]+)\.(\w+)([\w\.]+)@([\w\.]+)\.(\w+)/
+const pattern_nombre = /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+(?:\s+[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+){1,5}(?:\s+[-\sa-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+)?$/
+
 
 /* Validación de campo (1º Apellido).
 Permite incluir:
@@ -17,7 +18,7 @@ Permite incluir:
 -Uso de prep. "de ó De ó Del" delante, contrac. y art.
 -Uso de Iniciales.
 -Ver ejemplos. */
-const pattern_apellido = /([\w\.]+)@([\w\.]+)\.(\w+)([\w\.]+)@([\w\.]+)\.(\w+)/
+const pattern_apellido = /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+(?:\s+[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+){1,5}(?:\s+[-\sa-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+)?$/
 
 /* 8 digitos*/
 const pattern_dni = /\d{8}/
@@ -30,7 +31,7 @@ Al entre 8 y 16 caracteres,
 Al menos un dígito, al menos una minúscula, 
 Al menos una mayúscula y 
 Al menos un caracter no alfanumérico*/
-const pattern_clave = /"^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$"/
+const pattern_clave = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
 
 
 function alerta_error(f,g,h){
@@ -136,6 +137,7 @@ function validar_todo(){
     a = document.getElementsByClassName("aparecer")
     if (a.length==0){
         alert("Registro completado")
+        window.location.href = "homepage2.html";
     } else{
         alert("Revisar las indicaciones resaltadas")
     }
@@ -148,7 +150,7 @@ function evento_7(){
 }
 
 function evento_8(){
-    b=document.getElementById("alerta_seleccionar")
+    b = document.getElementById("alerta_seleccionar")
     b.setAttribute("class","anular")
 }
 

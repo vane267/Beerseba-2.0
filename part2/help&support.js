@@ -13,7 +13,10 @@ const texto = document.getElementById("text-box"); // Cambiado de "box-texto"
 const pTexto = document.getElementById("warning-texto");
 const form = document.getElementById("contacto");
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", validacion) 
+
+function validacion(e){
+
     e.preventDefault(); // Evitar el envío inicial del form
 
     // Limpiar mensajes previos
@@ -66,4 +69,6 @@ form.addEventListener("submit", e => {
     } else {
         form.submit(); // Enviar el formulario si no hay errores
     }
-});
+
+    
+}

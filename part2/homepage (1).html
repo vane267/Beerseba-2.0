@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beerseba</title>
-    
-    
     <link rel="stylesheet" href="homepage (1).css">
+    <script language="javascript" type="text/javascript" src="homepage (1).js"></script>
+
 </head>
-<body>
+<body onload="cargar_eventos()">
 
    <!--MENUU-->
 
@@ -30,33 +30,19 @@
     <nav class="navbar">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="homepage (1).html">INICIO</a>
-            <a href="#">PRODUCTOS</a>
-            <a href="#">CONTACTO</a>
-            <a href="#">QUIÉNES SOMOS</a>
+            <a id="pegar_1"></a> <br>
+            <a href="homepage2.html">INICIO</a>
+            <a href="soloprod.html">PRODUCTOS</a>
+            <a href="quienes somos.html">QUIÉNES SOMOS</a>
         </div>
         
         <div id="main">
             <button class="openbtn" onclick="openNav()">☰</button>  
-        <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
 
         <div class="logo">
             <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
         </div>
-        <div class="nav-extra">
-            <div class="carrito">
-                <span class="icono-carrito"></span>
-            </div>
+        <div class="nav-extra" id="nav-adicional">
             <input type="search" placeholder="Buscar">
             <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
         </div>

@@ -1,0 +1,76 @@
+<!--el html de cargar producto-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Productos de Ropa</title>
+    <link rel="stylesheet" href="cargarprod.css">
+</head>
+<body>
+    <h1>Cargar Productos de Ropa</h1>
+
+    <!-- Formulario para cargar productos -->
+    <form id="productForm">
+        <label for="productName">Nombre del producto:</label>
+        <input type="text" id="productName" name="productName" required><br><br>
+
+        <label for="productDescription">Descripción del producto:</label>
+        <textarea id="productDescription" name="productDescription" required></textarea><br><br>
+
+        <label for="productCategory">Categoría:</label>
+        <select id="productCategory" name="productCategory" required>
+            <option value="Pantalón">Pantalón</option>
+            <option value="Remera">Remera</option>
+            <option value="Vestido">Vestido</option>
+        </select><br><br>
+
+        <label for="productSize">Talla:</label>
+        <select id="productSize" name="productSize" required>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select><br><br>
+
+        <!-- Selector de colores con visualización tipo imagen -->
+        <label>Colores:</label><br>
+        <div class="color-option">
+            <input type="checkbox" id="colorRojo" name="productColor" value="Rojo">
+            <div class="color-box rojo"></div>
+            <label for="colorRojo">Rojo</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorAzul" name="productColor" value="Azul">
+            <div class="color-box azul"></div>
+            <label for="colorAzul">Azul</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorVerde" name="productColor" value="Verde">
+            <div class="color-box verde"></div>
+            <label for="colorVerde">Verde</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorNegro" name="productColor" value="Negro">
+            <div class="color-box negro"></div>
+            <label for="colorNegro">Negro</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorBlanco" name="productColor" value="Blanco">
+            <div class="color-box blanco"></div>
+            <label for="colorBlanco">Blanco</label>
+        </div><br><br>
+
+        <label for="productImage">Imagen del producto:</label>
+        <input type="file" id="productImage" accept="image/*" required><br><br>
+
+        <button type="submit">Cargar Producto</button>
+    </form>
+
+</body>
+</html>

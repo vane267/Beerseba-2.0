@@ -109,10 +109,10 @@ span{
 
 .input-field label{
 	 position: absolute;
-	 color: #00000050;
+	 color: #000000;
 	 top: 30%; 
 	 left: 0;
-	 transform: translateY(-50%);
+	 transform: translateY(-80%);
 	 font-size: 15px;
 	 pointer-events: none;
 	 transition: 0.15s ease-in-out all;
@@ -141,7 +141,7 @@ input:focus~label, input:valid~label{
 	width: 100%;
 }
 
-.barra::before{
+.barra{
 	content: "";
 	height: 1px;
 	width: 0%;
@@ -153,9 +153,27 @@ input:focus~label, input:valid~label{
 
 }
 
-input:focus~.barra::before{
+input:focus~.barra{
 	width: 100%;
 }
+
+
+.mailcss{
+	display: none;	
+}
+
+.passcss{
+	display: none;	
+}
+
+input:focus~.mailcss{
+	display: block;
+}
+
+input:focus~.passcss{
+	display: block;
+}
+
 
 .forget {
 	display: flex;

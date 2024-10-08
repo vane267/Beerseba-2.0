@@ -1,47 +1,32 @@
-body {
+body, html {
     background-color:#edededd0;
     margin: 0%;
     padding: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.barra-superior {
-    background: linear-gradient(to right, #FF5E62, #FF9966);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-family: "Lato", sans-serif;
-    
-}
 
-nav {        
-    border: none;
-    background: white;
-    margin-bottom: 1.5%;
-    display: flex;
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center;
-    height: auto;
-    max-width: 100%;
-    padding: 10px 0;
-}     
+.navbar{
+    margin-bottom: 20px;
+}
 
 .logo{
     max-width: 100%;
     height: auto;
 }
 
+
+
 .box2 {
     /* Producto */
-    width: 55%;
+    max-width: 900px;
+    width: 40%;
     float: left;
     border: none;
     border-radius: 10px;
     background-color: white;
-    margin-left: 1.5%;
-    padding-left: 10px;
+    margin-left: 8%;
+    padding: 10px;
     padding-bottom: 15px;
 }
 .box2_1 {
@@ -49,6 +34,8 @@ nav {
     float: left; 
     border-style: none; 
     margin-left: 1%;
+    padding: 10px;
+    
 }
 
 .box2_1 img {
@@ -61,16 +48,12 @@ nav {
     /* Producto */
     float: left; 
     border-style: none; 
-    margin: 0%;
-    width: 70%;
+    margin: auto;
+    
     border-radius: 10px;
-    margin-top: 90px;
-    display: block;    /* Mantener en columna en pantallas grandes */
-    border-style: none;
-    margin: 0;
-    width: 70%;
-    border-radius: 10px;
-    margin-top: 90px;
+    
+
+    
 }
 
 
@@ -111,7 +94,7 @@ footer {
     font-display: center;
 }
 h1 {
-
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
     font-size:28px;
     margin: 0%;
     padding-top: 15px;
@@ -124,6 +107,7 @@ h2 {
     padding-bottom: 7px;
 }
 p {
+    
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -133,6 +117,30 @@ p {
     margin-left: 15px;
 }
 
+
+.span01{
+    font-weight: 800;
+}
+
+.span02{
+    float: right;
+}
+
+.span03{
+    float: right;
+    font-style: italic;
+}
+
+.span04{
+    color: blue;
+}
+
+.p01{
+    color: rgb(164, 167, 170);
+    text-align: center;
+    font-size: small;
+}
+
 .input {
     background: linear-gradient(to right, #FF5E62, #fca073);
     color: white;
@@ -140,20 +148,24 @@ p {
     cursor: pointer;
     width: 100%;
     border-radius: 4px;
-    font-weight: bold;
-    height: 35px;
+    height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .logo{
         justify-content: center;
-        margin-left: 10%;
+        margin-left: 50%;
+        margin-right: 0;
+        width: 90%;
+        z-index: 100;
     }
     .logo img{
         max-width: 80%;
+        margin-left: 30%;
+        margin-top: 0;
     }
 
     h1{
@@ -197,3 +209,5 @@ p {
         margin-bottom: 4%;
     }
 }
+
+

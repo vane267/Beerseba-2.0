@@ -9,17 +9,33 @@
 </head>
 
 <body>
+    <script>
+        // Cargar el texto guardado desde localStorage
+        var textoGuardado = localStorage.getItem("textoPrincipal");
+        if (textoGuardado) {
+            document.getElementById("textoPrincipal").innerText = textoGuardado;
+        }
+
+        // Cargar la imagen guardada desde localStorage
+        var imagenGuardada = localStorage.getItem("imagenPrincipal");
+        if (imagenGuardada) {
+            document.getElementById("imagenPrincipal").src = imagenGuardada;
+        }
+    </script>
 
 
 <!--MENUUU-->
+
 <div class="topnav" id="myTopnav">
-    <a href="C:\Users\Vanesa\Desktop\Beerseba\Admin.html" class="active" > Home </a>
-    <a href="C:\Users\Vanesa\Desktop\Beerseba\new_product.html" > Crear Producto </a>
-    <a href="C:\Users\Vanesa\Desktop\Beerseba\pedidos.html" > Pedidos Pendiente </a>
-    <a href="C:\Users\Vanesa\Desktop\Beerseba\homepage (1).html" class="Live"> Go Live </a>
+    <a href="Admin.html" class="active" > Home </a>
+    <a href="new_product.html" > Crear Producto </a>
+    <a href="pedidos.html" > Pedidos Pendiente </a>
+    <a href="editor.html" >Editor Principal</a>
+    
+    <a href="homepage (1).html" class="Live"> Go Live </a>
+    
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");

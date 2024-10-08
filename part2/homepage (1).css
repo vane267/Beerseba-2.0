@@ -23,7 +23,7 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 80px;
   }
   
   .sidebar a {
@@ -88,6 +88,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: white;
+    margin-bottom: 0;
 }
 
 .logo {
@@ -151,12 +152,38 @@ body {
     width: 200px;
 }
 
-.carrito {
+
+.nav-simple{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 5px;
-    font-weight: bold;
+    float: right;
+    right: 800%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding-top: 20%;
+    transition: 0.5s ease-in-out;
+    
+
 }
+
+.nav-simple a {
+    text-decoration: style;
+    color: #333;
+    font-size: 13px;
+}
+
+.nav-simple input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 180px;
+    height: 25px;
+
+}
+
 
 /* Banner principal */
 .banner {
@@ -269,10 +296,6 @@ h2 {
 
     .sidebar{
         float: right;
-    }
-
-    .nav-extra{
-        display: none;
     }
 
     
