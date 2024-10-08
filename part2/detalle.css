@@ -48,11 +48,41 @@ body {
 .favourite{
     display: none;
 }
-.product-details {
-    margin-top: 35px;
+.product-details {  
     padding: 20px;
     flex-grow: 1;
     
+}
+
+.container-fav{
+    display: flex;
+    gap: 20px;
+}
+.container-fav .btn-fav{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #00000025;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-left: 90%;
+}
+
+#added-favorite {
+	color: red;
+	display: none;
+}
+
+#favorite-regular.active {
+	display: none;
+}
+
+#added-favorite.active {
+	display: block;
+	color: red;
 }
 
 

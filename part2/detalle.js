@@ -8,12 +8,18 @@ function validarCompra() {
     else{
         window.location.href = "Resumen_compra.html";
     }
-}
+    }
 
-
+    document.querySelector('.btn-fav').onclick=function(){
+    const favoriteRegular = document.getElementById('favorite-regular');
+    const addedFavorite = document.getElementById('added-favorite');
+    favoriteRegular.classList.toggle('active');
+    addedFavorite.classList.toggle('active');
+    }
+    
 
 function cargar_eventos(){
-    document.getElementById("button_prueba").addEventListener("click", validarCompra);
-    
- 
+
+    /* aun por definirse */
+    document.getElementById("btn-comprar").addEventListener("click", validarCompra); 
 }

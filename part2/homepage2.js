@@ -35,7 +35,7 @@ function incluirNombre(){
         a.classList.replace("nav-extra", "nav-simple");
 
     }
-    else if(600 <= w){
+    if(600 <= w){
         console.log("es mayor que 600")
         c.appendChild(a)
         a.classList.replace("nav-simple", "nav-extra")    
