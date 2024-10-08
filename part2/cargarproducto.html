@@ -34,8 +34,37 @@
             <option value="XL">XL</option>
         </select><br><br>
 
-        <label for="productColor">Color:</label>
-        <input type="color" id="productColor" name="productColor" required><br><br>
+        <!-- Selector de colores con visualización tipo imagen -->
+        <label>Colores:</label><br>
+        <div class="color-option">
+            <input type="checkbox" id="colorRojo" name="productColor" value="Rojo">
+            <div class="color-box rojo"></div>
+            <label for="colorRojo">Rojo</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorAzul" name="productColor" value="Azul">
+            <div class="color-box azul"></div>
+            <label for="colorAzul">Azul</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorVerde" name="productColor" value="Verde">
+            <div class="color-box verde"></div>
+            <label for="colorVerde">Verde</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorNegro" name="productColor" value="Negro">
+            <div class="color-box negro"></div>
+            <label for="colorNegro">Negro</label>
+        </div>
+
+        <div class="color-option">
+            <input type="checkbox" id="colorBlanco" name="productColor" value="Blanco">
+            <div class="color-box blanco"></div>
+            <label for="colorBlanco">Blanco</label>
+        </div><br><br>
 
         <label for="productImage">Imagen del producto:</label>
         <input type="file" id="productImage" accept="image/*" required><br><br>

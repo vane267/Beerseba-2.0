@@ -61,3 +61,27 @@ button:hover {
     margin-top: 10px;
     border-radius: 5px;
 }
+
+.color-option {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #000;
+}
+
+.rojo { background-color: red; }
+.azul { background-color: blue; }
+.verde { background-color: green; }
+.negro { background-color: black; }
+.blanco { background-color: white; border: 1px solid #000; }
+
+label {
+    margin-left: 5px;
+}
