@@ -1,11 +1,11 @@
 body{
-    background-color: #ededed;
+    background-color: #f1f1f198;
     margin: 0;
 }
 
 .productos {
     padding: 20px;
-    background: #ededed;
+    background: #f1f1f198;
 }
 
 .productos-grid {

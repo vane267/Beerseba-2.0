@@ -1,7 +1,18 @@
 
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+
 function incluirNombre(){
     w = window.innerWidth;
-    
+        
     a = document.getElementById("nav-adicional")
     b = document.getElementById("pegar_1")
     c = document.getElementById("nav-bar")
@@ -10,13 +21,13 @@ function incluirNombre(){
     if(600 > w){
         console.log("es menor que 600")
         b.appendChild(a)
-        a.classList.replace("nav-extra", "nav-small");
+        a.removeAttribute("class")
 
     }
     else if(600 <= w){
         console.log("es mayor que 600")
         c.appendChild(a)
-        a.classList.replace("nav-small", "nav-extra")    
+        a.setAttribute("class","nav-extra")
     }
 }   
 
