@@ -64,12 +64,8 @@
 
 
 @media screen and (max-width: 1110px) {
-    .navbar{
-        padding-bottom: 70px;
-    }
-    .nav-extra {
-        padding-top: 80px;
-    }
+
+
     .section {
         flex-direction: column; /* Cambia la disposición de los elementos a una columna en pantallas más pequeñas */
         align-items: center;
@@ -101,4 +97,21 @@
         margin-right: 0;
         font-size: 14px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
     }
+}
+
+
+@media screen and (max-width:600px) {
+    .logo{
+        width: 60%;
+        margin-left: 40%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+
+    .text p{
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
 }

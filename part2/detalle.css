@@ -8,7 +8,10 @@ body {
 
 .navbar{
     border-bottom: 1px solid rgb(212, 211, 211);    
-    margin-bottom: 20px;
+}
+
+#pegar_1{
+    padding-left: 10%;
 }
 
 .main-container {
@@ -323,7 +326,7 @@ a{
     }
 
     .logo img {
-        width: 50%; /* Reduce el tamaño del logo en pantallas más pequeñas */
+        width: 400%; 
     }
     .alinear{
         display: inline-flex;
@@ -352,6 +355,14 @@ a{
 
 @media only screen and (max-width: 600px) {
 
+    .logo{
+        justify-items: center;
+    }
+
+    .logo img{
+        width: 100%;
+        margin-right: -60%;
+    }
 
     .product-container {
         position: relative;
@@ -372,6 +383,11 @@ a{
         
         margin-right: 10%;
         margin-left: 10%;
+    }
+
+
+    #nav_adicional{
+        margin-left: 20%;
     }
 
 }

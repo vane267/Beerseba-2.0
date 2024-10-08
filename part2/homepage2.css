@@ -141,3 +141,22 @@ body{
         padding-top: 80px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    
+    .logo{
+        margin-top: -5%;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-right: 40%;
+        margin-left: -20%;
+        transition: all 0.5s ease;
+        padding: 0;
+        padding-top: -20%;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+
+}

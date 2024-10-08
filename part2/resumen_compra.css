@@ -157,10 +157,15 @@ p {
 @media screen and (max-width: 750px) {
     .logo{
         justify-content: center;
-        margin-left: 10%;
+        margin-left: 50%;
+        margin-right: 0;
+        width: 90%;
+        z-index: 100;
     }
     .logo img{
         max-width: 80%;
+        margin-left: 30%;
+        margin-top: 0;
     }
 
     h1{
@@ -204,3 +209,5 @@ p {
         margin-bottom: 4%;
     }
 }
+
+

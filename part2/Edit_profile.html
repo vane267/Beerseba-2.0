@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="Edit_profile.css">
-</head>
-<body>
+    <script language="javascript" type="text/javascript" src="header.js"></script>
+  </head>
+
+<body id="cuerpo_1" onload="cargar_eventos()">
+
+   <!--MENUU-->
 
         <!-- Barra superior -->
         <div class="barra-superior">
@@ -24,24 +28,26 @@
         </div>
     
         <!-- Barra de navegación -->
-        <nav class="navbar">
-            <div id="mySidebar" class="sidebar">
+        <nav class="navbar" id="nav-bar">
+          
+          <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a id="pegar_1"></a> <br>
                 <a href="homepage2.html">INICIO</a>
                 <a href="soloprod.html">PRODUCTOS</a>
                 <a href="quienes somos.html">QUIÉNES SOMOS</a>
-            </div>
+                
+          </div>
             
-            <div id="main">
+          <div id="main">
                 <button class="openbtn" onclick="openNav()">☰</button>  
     
-            <div class="logo">
-                <a href="homepage2.html"><img src="pics\image-removebg-preview.png" alt="Beerseba Logo"></a>
-            </div>
-            <div class="nav-extra">
-                <div class="carrito">
-                    <span class="icono-carrito"> ♡ </span>
-                </div>
+          <div class="logo">
+                <img src="pics\image-removebg-preview.png" alt="Beerseba Logo">
+          </div>
+
+          <div class="nav-extra" id="nav-adicional">
+
                 <input type="search" placeholder="Buscar">
                 
                 <div class="profile-dropdown">
@@ -58,7 +64,7 @@
             
                     <ul class="profile-dropdown-list">
                       <li class="profile-dropdown-list-item">
-                        <a href="Edit_profile.html">
+                        <a href="#">
                           <i class="fa-regular fa-user"></i>
                           Editar Perfil
                         </a>
@@ -93,12 +99,12 @@
                         </a>
                       </li>
                     </ul>
-                  </div>           
+          </div>           
                    
     
         </nav>
         <script src="homepage2.js"></script>
-
+    
     
         <form class="box3" action="prueba.php" method="get">
 

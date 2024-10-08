@@ -53,10 +53,11 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 50px;
   }
   
   .sidebar a {
+    margin-left: 5%;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -64,6 +65,16 @@ body {
     display: block;
     transition: 0.3s;
   }
+
+  #pegar_1{
+    color: black;
+    margin-right: 40px;
+  }
+
+  #pegar_1 a:hover{
+    color: #FF5E62;
+  }
+
   
   .sidebar a:hover {
     color: #f1f1f1;
@@ -178,8 +189,9 @@ nav {
     right: 0;
     padding: 1.5%;
     transition: 0.5s ease-in-out;
-
+    margin-left: 10%;
 }
+
 
 .nav-extra a {
     text-decoration: style;
@@ -195,12 +207,33 @@ nav {
     width: 200px;
 }
 
-.carrito {
-    display: flex;
+.nav-small{
+    display: column;
     align-items: center;
-    gap: 5px;
-    font-weight: bold;
+    row-gap: 20px;
+    float: left;
+    right: 800%;
+    top: 10%;
+    right: 0;
+    padding: 1.5%;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    padding-top: 0;
+
 }
+
+.nav-small input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 150px;
+    height: 25px;
+
+}
+
+
 
 
 h2 {
@@ -304,8 +337,8 @@ body{
 
 .profile-img{
     position: relative;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     background: url(pics/profile.png);
     border-radius: 50%;
     background-size: cover;
@@ -320,11 +353,120 @@ body{
     color: var(--green);
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1000px) {
+
+    .logo{
+        width: 20%;
+        margin-right: 36%;
+        padding-top: 0;
+
+    }
+
     .navbar{
         padding-bottom: 70px;
     }
     .nav-extra {
         padding-top: 80px;
+    }
+
+    .nav-extra input[type="search"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+        width: 150px;
+        height: 25px;
+        position: 0;
+    }
+
+    .profile-img{
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(pics/profile.png);
+        border-radius: 50%;
+        background-size: cover;
+
+    }
+
+    .profile-img i{
+        position: relative;
+        right: 0;
+        bottom: 0.5rem;
+        font-size: 0.5rem;
+        color: var(--green);
+    }
+
+}
+
+@media screen  and (max-width:600px){
+
+    .sidebar {
+        padding-top: 100px;
+      }
+    
+    .logo{
+        width: 50%;;
+        margin-right: 18%;
+        padding-top: 0;
+
+    }
+
+    .logo img {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .navbar{
+        padding-bottom: 0;
+        height: 25%;
+    }
+
+    .nav-extra{
+        position: relative;
+        padding-top: 0;
+    }
+    
+    .nav-extra input[type="search"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+        width: 150px;
+        height: 20px;
+        position: 0;
+    }
+
+    .profile-img{
+        width: 1.3rem;
+        height: 1.3rem;
+        background: url(pics/profile.png);
+        border-radius: 50%;
+        background-size: cover;
+
+    }
+
+    #nav_adicional{
+        margin-left: 20%;
+    }
+
+    
+    .profile-dropdown-list{
+        position: absolute;
+        top: 40px;
+        width: 220px;
+        right: 0;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+
+    .profile-dropdown-list-item{
+        padding-left: 0;
+        padding-right: 20px;
+        transition: background-color 0.2s, paading-left 0.2s;
     }
 }
