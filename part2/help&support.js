@@ -66,4 +66,6 @@ form.addEventListener("submit", e => {
     } else {
         form.submit(); // Enviar el formulario si no hay errores
     }
+
+    
 });

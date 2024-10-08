@@ -150,7 +150,7 @@ function evento_7(){
 }
 
 function evento_8(){
-    b=document.getElementById("alerta_seleccionar")
+    b = document.getElementById("alerta_seleccionar")
     b.setAttribute("class","anular")
 }
 

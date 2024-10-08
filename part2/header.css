@@ -149,7 +149,6 @@ nav {
     margin-right: auto;
     text-align: center;
     float: right;
-    z-index: 1;
 
 }
 
@@ -232,7 +231,6 @@ nav {
     height: 25px;
 
 }
-
 
 
 
@@ -422,12 +420,12 @@ body{
         height: 25%;
     }
 
-    .nav-extra{
+    .nav-small{
         position: relative;
         padding-top: 0;
     }
     
-    .nav-extra input[type="search"] {
+    .nav-simple input[type="search"] {
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 20px;
