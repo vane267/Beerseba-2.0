@@ -157,11 +157,11 @@
 
                       </div>
 
-                      <div class="quantity">
-                        <button class="quantity-btn" id="disminuye" onclick="restaUno()">-</button>
-                        <input type="text" id="contador" value="1" readonly>
-                        <button class="quantity-btn"id="agrega" onclick="agregaUno()">+</button>
-                    </div>                 
+                      <!--<div class="quantity">
+                        
+                        <input type="number" id="contador" value="1">
+                        
+                      </div>-->             
                 
               
                   <label for="chk" class="guide-label"> GUIA DE TALLES +</label>
@@ -207,11 +207,17 @@
                           </tr>
                       </table>
                     </div>
+              <div class="cont-compra">
+                    <div class="quantity">
+                        
+                      <input type="number" id="contador" value="1">
+                      
+                    </div>  
                     <input class="btn-comprar" type="submit"  onclick="validarCompra(this)" value="Comprar">
                 </div>
                 </form>
                 <script src="detalle.js"></script>
-
+              </div>
       </div>
     </section>
     </div>

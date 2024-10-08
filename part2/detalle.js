@@ -11,7 +11,7 @@ function validarCompra() {
     return res 
     }
 function agregaUno() {
-    var currentValue = parseInt(document.getElementById('contador').value);
+    var currentValue = document.getElementById('contador').value
     document.getElementById('contador').value = currentValue + 1;
 }
 function restaUno() {

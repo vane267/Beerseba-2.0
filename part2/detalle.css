@@ -228,7 +228,7 @@ h3 {
     border-radius: 5px;
     overflow: hidden;
     width: fit-content;
-    margin-left: 150px;
+    margin-left: 20px;
     margin-top: 20px;
 }
 .quantity-btn{
@@ -257,9 +257,12 @@ h3 {
 #disminuye + #aumenta{
     font-weight: bold;
 }
+.cont-comprar{
+    display: inline;
+}
 
 .btn-comprar {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     background-color: #333;
     background: linear-gradient(to right, #ff3933,#ff8b4c);
@@ -268,9 +271,8 @@ h3 {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px;
     border-radius: 10px;
-    margin-top: 30px;
+
 }
 
 a{
