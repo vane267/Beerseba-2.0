@@ -1,12 +1,17 @@
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("nav1").style.height = "100%";
+    document.getElementById("barra-desplegable").style.display = "none";
+    
+    
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("nav1").style.height = "auto";
+    document.getElementById("barra-desplegable").style.display = "inline";
+  
 }
 
 

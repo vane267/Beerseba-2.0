@@ -27,7 +27,9 @@
     </div>
 
     <!-- Barra de navegación -->
-    <nav class="navbar">
+
+    <nav id="nav1" class="navbar">
+        <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a id="pegar_1"></a> <br>
@@ -36,17 +38,20 @@
             <a href="quienes somos.html">QUIÉNES SOMOS</a>
         </div>
         
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button>  
+    </nav>
 
-        <div class="logo">
+    
+    <div class="logo1">       
+        <div class="logo">    
             <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
         </div>
+
         <div class="nav-extra" id="nav-adicional">
             <input type="search" placeholder="Buscar">
             <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
         </div>
-    </nav>
+    </div>
+    
 
     <!-- Banner principal -->
      <!-- Banner principal -->
@@ -104,8 +109,6 @@
             <!-- Añade más productos según sea necesario -->
         </div>
     </section>
-
-
 
 </body>
 </html>
