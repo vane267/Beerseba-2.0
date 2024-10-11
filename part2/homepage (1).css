@@ -16,39 +16,24 @@ body {
 /*contenedor*/
 .navbar {
     background-color: white;
-    position:absolute;
-    
-    
-}
-
-.logo1 {
-    position: relative;
-    padding-top: 80px;
-    margin-left: 200px;
-    z-index: -1;
-    
     
 }
 
 /*x*/
 .sidebar {
-    
     width: 0;
     top: 0;
     left: 0;
-    
     background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.5s;
-  
+    overflow: hidden;
+    transition-duration: 0.5s;
+    float: left;
   }
   
 .sidebar a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    transition: 0.3s;
   }
   
   .sidebar a:hover {
@@ -56,11 +41,7 @@ body {
   }
   
 .closebtn {
-
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    float: left;
   }
 
 /*☰*/
@@ -72,22 +53,30 @@ body {
     padding: 10px 15px;
     border: none;
     float: left;
+    
   }
-
   
   .openbtn:hover {
     background-color: #ff996631;
   }
   
 /*logo beerseba*/
-.logo {
-    width: 20%;
-    margin-right: auto;
+.logo1 {
     display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
     
-   
-
 }
+
+.logo {
+    margin: 10px;
+    padding-left: 100px;
+}
+
+.nav-extra {
+    margin: 10px;
+}
+
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -132,19 +121,7 @@ body {
     color: #FF5E62;
 }
 
-.nav-extra {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    float: right;
-    right: 800%;
-    position: absolute;
-    top: 10%;
-    right: 0;
-    padding: 1.5%;
-    transition: 0.5s ease-in-out;
 
-}
 
 .nav-extra a {
     text-decoration: style;
@@ -328,9 +305,6 @@ h2 {
         transition: all 0.5s ease;
     }
     
-    .nav-extra{
-        display: none;
-    }
 
     .banner {
         display: flex;
