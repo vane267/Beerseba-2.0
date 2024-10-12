@@ -7,27 +7,36 @@ body {
 }
 
 /*Menuuu*/
-
-
 body {
     font-family: "Lato", sans-serif;
   }
 
-/*contenedor*/
+/*contenedor del dropdown, permite  */
 .navbar {
     background-color: white;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    width: 0;
+    height: 0;
     
 }
 
 /*x*/
 .sidebar {
-    width: 0;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    overflow: hidden;
-    transition-duration: 0.5s;
-    float: left;
+    display: none;
+    transition: width 2s, height 4s;
+  }
+
+/*boton ☰ solo se oculta, pero ocupa el espacio*/
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    visibility: visible;
   }
   
 .sidebar a {
@@ -41,19 +50,7 @@ body {
   }
   
 .closebtn {
-    float: left;
-  }
-
-/*☰*/
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #ffffff00;
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
-    float: left;
-    
+    float: right;
   }
   
   .openbtn:hover {
@@ -64,8 +61,8 @@ body {
 .logo1 {
     display: flex;
     justify-content:space-between;
-    align-items: flex-end;
-    
+    align-items: flex-end;  
+    position: relative;   
 }
 
 .logo {
