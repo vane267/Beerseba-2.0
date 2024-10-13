@@ -65,10 +65,10 @@ function desplegarUsuario(){
     btn = document.querySelector(".profile-dropdown-btn");
   
     classList1 = profileDropdownList.classList;
-  
+    /*
     classList1.toggle("active");
     
-    /* 
+     
     window.addEventListener("click", function (e) {
         if (!btn.contains(e.target)) classList1.remove("active");
     });
@@ -84,7 +84,7 @@ function cargar_eventos(){
     barraDesplegable()
     window.addEventListener("resize",barraDesplegable);
     document.getElementById("salir").addEventListener("click",salirSesion)
-    document.getElementById("togo").addEventListener("click",desplegarUsuario)
+    document.getElementById("togo").addEventListener("toggle",desplegarUsuario)
     
 }
 

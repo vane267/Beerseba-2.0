@@ -169,29 +169,22 @@ body {
 
 .profile-dropdown{
     position: relative;
-    width: fit-content;
-    z-index: 1;
     
-
 }
 
 .profile-dropdown-list{
     position: absolute;
-    top: 68px;
-    width: 220px;
+    top: 48px;
+    width: 180px;
     right: 0;
-    background-color: var(--white);
+    background-color: white;   
     border-radius: 10px;
-    box-shadow: var(--shadow);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
+    height: 300px;
+    list-style-type: none;
 
 }
 
-.profile-dropdown-list.active {
-    max-height: 500px;
-}
+
 
 .profile-dropdown-list hr{
     border: .5px solid #ffb1b2;
@@ -257,9 +250,6 @@ body {
     position: relative;
     width: 2rem;
     height: 2rem;
-    /* no funciona
-    background: url(pics\perfil.jpeg);
-    */
     border-radius: 50%;
     background-size: cover;
 
