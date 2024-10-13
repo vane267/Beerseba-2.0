@@ -11,14 +11,15 @@ body {
     font-family: "Lato", sans-serif;
   }
 
-/*contenedor del dropdown, permite  */
+/*contenedor del dropdown,  */
 .navbar {
-    background-color: white;
+    
     position: absolute;
     z-index: 1;
     padding: 10px;
     width: 0;
     height: 0;
+    background-color: white;
     
 }
 
@@ -72,14 +73,11 @@ body {
 
 .nav-extra {
     margin: 10px;
+    display: flex;
 }
 
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+ 
 
 /* Barra superior */
 .barra-superior {
@@ -164,6 +162,115 @@ body {
     width: 180px;
     height: 25px;
 
+}
+
+
+/*profile-down*/
+
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    
+
+}
+
+.profile-dropdown-list{
+    position: absolute;
+    top: 68px;
+    width: 220px;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+.profile-dropdown-list.active {
+    max-height: 500px;
+}
+
+.profile-dropdown-list hr{
+    border: .5px solid #ffb1b2;
+}
+
+.profile-dropdown-list-item{
+    padding: 0.5rem 0 0.5rem 1rem;
+    transition: background-color 0.2s, paading-left 0.2s;
+}
+
+.profile-dropdown-list-item:hover{
+    padding-left: 1.5rem;
+    background-color: #ffeaec;
+}
+
+.profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+/*-------icons-------*/
+.profile-dropdown-list-item a i{
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #FF5E62;
+    color: var(--white);
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.profile-dropdown-btn{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in, border 0.3s;
+}
+
+.profile-dropdown-btn:hover{
+    box-shadow: var(--shadow);
+}
+
+.profile-dropdown-btn span{
+    margin: 0 0.5rem;
+    margin-right: 0;
+
+}
+
+.profile-img{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    /* no funciona
+    background: url(pics\perfil.jpeg);
+    */
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
+.profile-img i{
+    position: relative;
+    right: 0;
+    bottom: 0.3rem;
+    font-size: 0.6rem;
+    color: var(--green);
 }
 
 
@@ -269,6 +376,59 @@ h2 {
 
 /* Responsiveness */
 
+ /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 500px) {
+
+    
+    .navbar{
+        display: flex;
+        justify-content: flex-start; /* Mantiene todo alineado a la izquierda */
+        align-items: center; 
+        transition: all 0.5s ease;
+    }
+
+    .logo{
+        margin-top: 0;
+        width: auto;
+        transition: all 0.5s ease;
+    }
+
+
+    .productos-grid {
+        grid-template-columns: minmax(200px 1fr);
+        gap: 20px;
+    }
+
+    .producto {
+        padding: 10px;
+    }
+
+    .producto h3 {
+        display: none;
+    }
+
+    .producto p {
+        display: none;
+    }
+
+    .producto img {
+        height: fit-content;
+    }
+
+    .banner img {
+        width: 50%; 
+    }
+
+    .colores{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .logo{
@@ -282,6 +442,7 @@ h2 {
 
     
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -337,49 +498,5 @@ h2 {
 
 }
 
-@media screen and (max-width: 500px) {
-
-    
-    .navbar{
-        display: flex;
-        justify-content: flex-start; /* Mantiene todo alineado a la izquierda */
-        align-items: center; 
-        transition: all 0.5s ease;
-    }
-
-    .logo{
-        margin-top: 0;
-        width: auto;
-        transition: all 0.5s ease;
-    }
 
 
-    .productos-grid {
-        grid-template-columns: minmax(200px 1fr);
-        gap: 20px;
-    }
-
-    .producto {
-        padding: 10px;
-    }
-
-    .producto h3 {
-        display: none;
-    }
-
-    .producto p {
-        display: none;
-    }
-
-    .producto img {
-        height: fit-content;
-    }
-
-    .banner img {
-        width: 50%; 
-    }
-
-    .colores{
-        display: none;
-    }
-}

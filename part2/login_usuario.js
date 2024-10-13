@@ -6,6 +6,7 @@ const pPass = document.getElementById("warning-password")
 
 form.addEventListener("submit", prueba1)
 
+
 function prueba1(parametro){
 
     parametro.preventDefault()
@@ -38,8 +39,10 @@ function prueba1(parametro){
             pPass.innerHTML = warningB
             
         } else {
-            window.location.href = "homepage2.html";
+            sessionStorage.setItem("logueado", "Successfull");
+            window.location.href = "homepage (1).html";
         }
     
     
 }
+
