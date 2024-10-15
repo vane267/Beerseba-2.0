@@ -179,16 +179,6 @@ form{
 
 @media (max-width: 600px) {
 
-    .logo{
-        justify-content: center;
-        margin-top: -5%;
-        margin-bottom: 20px;
-        width: 80%;
-        margin-left: 50%;
-        margin-right: -15%;
-        transition: all 0.5s ease;
-        padding: 0;
-    }
 
     .logo img{
         width: 90%;
