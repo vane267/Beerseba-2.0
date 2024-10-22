@@ -185,7 +185,6 @@ body {
 }
 
 
-
 .profile-dropdown-list hr{
     border: .5px solid #ffb1b2;
 }
@@ -206,7 +205,8 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--black);
+    color: var(--white);
+    
 }
 
 /*-------icons-------*/
@@ -216,7 +216,7 @@ body {
     width: 2.3rem;
     height: 2.3rem;
     background-color: #FF5E62;
-    color: var(--white);
+    color: white;
     line-height: 2.3rem;
     text-align: center;
     border-radius: 50%;
@@ -367,10 +367,7 @@ h2 {
 /* Responsiveness */
 
  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
- @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+
 
   @media screen and (max-width: 500px) {
 
@@ -427,7 +424,7 @@ h2 {
     }
 
     .sidebar{
-        float: right;
+        position: left;
     }
 
     
