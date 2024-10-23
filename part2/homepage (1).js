@@ -25,14 +25,14 @@ function barraDesplegable(){
     a = document.getElementById("nav-adicional")
     b = document.getElementById("pegar_1")
     c = document.getElementById("nav-bar")
-    if(900 > w){
-        console.log("es menor que 600")
+    if(500 > w){
+        console.log("es menor que 500")
         b.appendChild(a)
         /*muestra el nav*/
         document.getElementById("nav-adicional").style.display ="grid";
     }
-    else if(900 <= w){
-        console.log("es mayor que 600")
+    else if(500 <= w){
+        console.log("es mayor que 500")
         c.appendChild(a)
         a.setAttribute("class","nav-extra")
         document.getElementById("nav-adicional").style.display ="flex";
