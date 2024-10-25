@@ -59,33 +59,12 @@ function salirSesion(){
     window.location.href = "homepage (1).html";
 }
 
-function desplegarUsuario(){
-    console.log("hola")
-    profileDropdownList = document.querySelector(".profile-dropdown-list");
-    btn = document.querySelector(".profile-dropdown-btn");
-  
-    classList1 = profileDropdownList.classList;
-    /*
-    classList1.toggle("active");
-    
-     
-    window.addEventListener("click", function (e) {
-        if (!btn.contains(e.target)) classList1.remove("active");
-    });
-    */
-}
-
-
-
-
 function cargar_eventos(){
     
     validarDesplegable()
     barraDesplegable()
     window.addEventListener("resize",barraDesplegable);
     document.getElementById("salir").addEventListener("click",salirSesion)
-    document.getElementById("togo").addEventListener("toggle",desplegarUsuario)
-    
 }
 
 
