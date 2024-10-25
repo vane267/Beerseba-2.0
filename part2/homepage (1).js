@@ -1,70 +1,69 @@
 
-function openNav() {
-    /*modifica el contenedor del desplegable*/
-    document.getElementById("nav1").style.width = "250px";
-    document.getElementById("nav1").style.height = "40%";
-
-    /*muestra el dropdown*/
-    document.getElementById("mySidebar").style.display ="grid";
-
-    /*boton ☰*/
-    document.getElementById("barra-desplegable").style.visibility = "hidden";
+/*Evento cargado desde el HTML*/
+function openNav() {    
+    document.getElementById("nav1").style.width = "250px";                      /*Modifica el contenedor del desplegable1*/
+    document.getElementById("nav1").style.height = "100%";                      /*Modifica el contenedor del desplegable1*/
+    document.getElementById("mySidebar").style.display ="grid";                 /*Muestra y ocupa un nuevo espacio del desplegable1*/
+    document.getElementById("barra-desplegable").style.visibility = "hidden";   /*Oculta y mantiene el espacio cuando se despliega boton ☰*/
 }
 
+/*Evento cargado desde el HTML*/
 function closeNav() {
-    document.getElementById("nav1").style.width = "0";
-    document.getElementById("nav1").style.height = "0";
-    
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("barra-desplegable").style.visibility = "visible";
+    document.getElementById("nav1").style.width = "0";                          /*Modifica el contenedor del desplegable1*/
+    document.getElementById("nav1").style.height = "0";                         /*Modifica el contenedor del desplegable1*/
+    document.getElementById("mySidebar").style.display = "none";                /*Oculta y no mantiene el espacio el desplegable1*/
+    document.getElementById("barra-desplegable").style.visibility = "visible";  /*Muestra y no ocupa un nuevo espacio cuando se despliega boton ☰*/
 }
 
 
-function barraDesplegable(){
-    w = window.innerWidth;
-    a = document.getElementById("nav-adicional")
-    b = document.getElementById("pegar_1")
-    c = document.getElementById("nav-bar")
-    if(500 > w){
-        console.log("es menor que 500")
-        b.appendChild(a)
-        /*muestra el nav*/
-        document.getElementById("nav-adicional").style.display ="grid";
+/* Funcion para cambiar de lugar el desplegable2 del conetender nav-bar al pegar_1 */
+function dropdown_2(){
+    let winwidth = window.innerWidth;                                           /* Ejecuta la funcion */
+    let navmove = document.getElementById("nav-adicional")                      /* Id de la etiqueta que se movera*/
+    let space1 = document.getElementById("pegar_1")                             /* Id contenedor izquierda del logo*/
+    let space2 = document.getElementById("nav-bar")                             /* Id contenedor derecha de logo*/
+    if(500 > winwidth){
+        console.log("es menor que 500")                                         /*log para probar el evento*//*log*/
+        space1.appendChild(navmove)                                             /*mueve al espacio 2*/
+        document.getElementById("nav-adicional").style.display ="grid";         /*alineados uno debajo de otro*/
     }
-    else if(500 <= w){
-        console.log("es mayor que 500")
-        c.appendChild(a)
-        a.setAttribute("class","nav-extra")
-        document.getElementById("nav-adicional").style.display ="flex";
+    else if(500 <= winwidth){
+        console.log("es mayor que 500")                                         /*log para probar el evento*/
+        space2.appendChild(navmove)                                             /*mueve al espacio 2*/
+        document.getElementById("nav-adicional").style.display ="flex";         /*alineados uno al lado del otro*/
     }
 }   
 
-function validarDesplegable(){
 
-    if (sessionStorage.getItem("logueado")==null){
-        console.log("no esta logueado")
-        document.getElementById("parte2").style.display ="none";
-        document.getElementById("parte1").style.display ="inline";
+/* Funcion que verifica Si estas logueado para decidir si mostrar la parte1 o parte2 */
+function check_dropdown(){
 
+    if (sessionStorage.getItem("logueado")==null){                              /* Verifica si existe la variable del navegador*/
+        console.log("no esta logueado")                                         /*log para probar el evento*/
+        document.getElementById("parte2").style.display ="none";                /*Oculta y no mantiene el espacio del contenedor parte2*/
+        document.getElementById("parte1").style.display ="inline";              /*Muestra y ocupa un nuevo espacio del contenedor parte1*/
     }
     else{
-        document.getElementById("parte1").style.display ="none";
-        document.getElementById("parte2").style.display ="inline";
+        document.getElementById("parte1").style.display ="none";                /*Oculta y no mantiene el espacio del contenedor parte1*/
+        document.getElementById("parte2").style.display ="inline";              /*Muestra y ocupa un nuevo espacio del contenedor parte2*/
 
     }
 }
 
+
+/* Borra la variable del navegador que verifica la funcion check_dropdown */
 function salirSesion(){
-    sessionStorage.removeItem("logueado");
-    window.location.href = "homepage (1).html";
+    sessionStorage.removeItem("logueado");                                      /* Borra variable del navegador*/
+    window.location.href = "homepage (1).html";                                 /* Te lleva a la homepage (1) */
 }
 
-function cargar_eventos(){
-    
-    validarDesplegable()
-    barraDesplegable()
-    window.addEventListener("resize",barraDesplegable);
-    document.getElementById("salir").addEventListener("click",salirSesion)
+
+/*Eventos cargardos al iniciar el html */
+function cargar_eventos(){    
+    check_dropdown()                                                            /* Ejecuta la funcion */
+    dropdown_2()                                                                /* Ejecuta la funcion */
+    window.addEventListener("resize",dropdown_2);                               /* Evento que sondea el width de la ventana */
+    document.getElementById("salir").addEventListener("click",salirSesion)      /* Evento que se ejecuta al hacer click*/
 }
 
 
