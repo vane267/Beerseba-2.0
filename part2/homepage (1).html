@@ -11,8 +11,6 @@
 </head>
 <body onload="cargar_eventos()">
 
-   <!--MENUU-->
-      
 
     <!-- Barra superior -->
     <div class="barra-superior">
@@ -25,44 +23,45 @@
         </div>
     </div>
 
-    <!-- Desplegable 1 "☰"-->
+    <!-- Contenedor desplegable 1 -->
     <nav id="nav1" class="navbar">
-        <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
-        <div id="mySidebar" class="sidebar">
-            <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <p id="pegar_1"></p> <br>
-            <a class="sidebar-a" href="homepage2.html">INICIO</a>
-            <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
-            <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
-        </div>
+      <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+      <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+        <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p id="pegar_1"></p> <br>
+        <a class="sidebar-a" href="homepage2.html">INICIO</a>
+        <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+        <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+      </div>
     </nav>
 
-    <!-- Header-->
+    <!-- Contenedor logo y desplegable 2 -->
     <div class="logo1" id="nav-bar">       
-        
-        <div class="logo">    
-            <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
-        </div>
+      <div class="logo">    
+        <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
+      </div>
+      <!-- Contenedor de buscar y desplegable 2-->
+      <div class="nav-extra" id="nav-adicional">
 
-        <div class="nav-extra" id="nav-adicional">
-            <input type="search" placeholder="Buscar">
-            <div class="cont-parte1" id="parte1">
+        <!-- Contenedor -->
+        <input type="search" placeholder="Buscar">
+        <!-- Contenedor Iniciar sesion -->
+        <div class="cont-parte1" id="parte1">
                 <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
-            </div>
-
-            <div class="profile-dropdown" id="parte2">
-
+        </div>
+        <!-- Contenedor Nombre y desplegable -->
+        <div class="profile-dropdown" id="parte2">
+              <!-- Nombre e imagen -->
               <div class="profile-dropdown-btn">
                 <div class="profile-img">
                   <i class="fa-solid fa-circle"></i>
                 </div>
-      
                 <span
                   >Victoria
                   <i class="fa-solid fa-angle-down"></i>
                 </span>
               </div>
-      
+              <!-- Desplegable 2 -->
               <div class="profile-dropdown-list">
                 <div class="profile-dropdown-list-item">
                   <a href="Edit_profile.html">
@@ -100,16 +99,12 @@
                   </a>
                 </div>
               </div>
-            </div>           
-            
-        </div>
+        </div>           
+      </div>
     </div>
     
 
     <!-- Banner principal -->
-     <!-- Banner principal -->
-      <!-- Banner principal -->
-       <!-- Banner principal -->
     <section class="banner">
         <div class="texto-banner">
             <h2>Spring <br>NEW COLLECTION</h2>
