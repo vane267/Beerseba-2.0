@@ -62,6 +62,7 @@ body {
     justify-content:space-between;
     align-items: flex-end;  
     position: relative;   
+    background-color: white;
 }
 
 .logo {
@@ -163,7 +164,7 @@ body {
 }
 
 
-/*profile-down*/
+/*Desplegable 2*/
 
 
 .profile-dropdown-btn{
