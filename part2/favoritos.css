@@ -1,7 +1,7 @@
 
-.navbar{
+/*.navbar{
     border-bottom: 1px solid rgb(212, 211, 211);
-}
+}*/
 
 /* Estilo de la lista de productos */
 
@@ -79,10 +79,10 @@
 
 @media screen and (max-width: 768px) {
 
-    .navbar{
+   /* .navbar{
         display: flex;
         justify-content: flex-start; /* Mantiene todo alineado a la izquierda */
-        align-items: center; 
+        /*align-items: center; 
         transition: all 0.5s ease;
     }
 
@@ -98,7 +98,7 @@
     
     .nav-extra{
         padding-top: 80px;
-    }
+    }*/
 
     .banner {
         display: flex;
@@ -136,29 +136,6 @@
 
 @media screen and (max-width: 600px) {
 
-    
-    .navbar{
-        display: flex;
-        justify-content: flex-start; /* Mantiene todo alineado a la izquierda */
-        align-items: center; 
-        transition: all 0.5s ease;
-        height: auto;
-    }
-
-    .logo{
-        margin-top: -5%;
-        margin-bottom: 20px;
-        width: 80%;
-        margin-right: 40%;
-        margin-left: 0px;
-        transition: all 0.5s ease;
-        padding: 0;
-    }
-
-    .nav-extra{
-        display: none;
-        
-    }
     .productos-grid {
         grid-template-columns: minmax(200px 1fr);
         gap: 20px;
@@ -194,15 +171,6 @@
         top: 0;
     }
 
-}
-
-@media screen and (max-width: 1110px) {
-    .navbar{
-        padding-bottom: 70px;
-    }
-    .nav-extra {
-        padding-top: 80px;
-    }
 }
 
 
