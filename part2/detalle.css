@@ -1,18 +1,12 @@
-
+/*
 body {
     font-family: "Lato", sans-serif;
     background-color: #ededed;
     margin: 0;
-    /*padding: 0;*/
+    padding: 0;
 }
 
-.navbar{
-    border-bottom: 1px solid rgb(212, 211, 211);    
-}
-
-#pegar_1{
-    padding-left: 10%;
-}
+ 
 
 .main-container {
     padding: 10px;
@@ -26,6 +20,8 @@ body {
     border-radius: 20px;
 
 }
+
+*/
 
 .product-container {
     display: flex;
@@ -51,10 +47,7 @@ body {
 .product-details {  
     padding: 20px;
     flex-grow: 1;
-    
 }
-
-
 
 .container-fav{
     display: flex;
@@ -277,6 +270,7 @@ h3 {
     margin-left: 10px;
 }
 
+/* Por revisar */
 a{
     text-decoration: none;
     color: white;
@@ -303,13 +297,14 @@ a{
 }
 
 @media (max-width: 1000px) {
+    /*
     .main-container {
-        max-width: 100%; /* Ocupa el ancho total de la pantalla */
-        padding: 5px; /* Reduce el padding */
+        max-width: 100%;  Ocupa el ancho total de la pantalla 
+        padding: 5px;  Reduce el padding 
         margin: auto;
-        border-radius: 0px; /* Elimina los bordes redondeados en móviles */
+        border-radius: 0px; /* Elimina los bordes redondeados en móviles 
     }
-
+    */
     .product-container {
         position: relative;
         flex-direction: column; /* Pone la imagen y los detalles en una columna en lugar de una fila */
@@ -360,10 +355,11 @@ a{
         font-size: 12px; /* Reduce el tamaño de la fuente */
         padding: 5px 10px;
     }
-
+    /*
     .logo img {
         width: 400%; 
     }
+        */
     .alinear{
         display: inline-flex;
     }
@@ -390,7 +386,7 @@ a{
 
 
 @media only screen and (max-width: 600px) {
-
+    /*
     .logo{
         justify-items: center;
     }
@@ -399,6 +395,7 @@ a{
         width: 100%;
         margin-right: -60%;
     }
+    */
 
     .product-container {
         position: relative;
@@ -421,9 +418,9 @@ a{
         margin-left: 10%;
     }
 
-
+    /*
     #nav_adicional{
         margin-left: 20%;
     }
-
+    */
 }
