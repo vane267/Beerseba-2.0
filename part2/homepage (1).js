@@ -19,16 +19,16 @@ function closeNav() {
 /* Funcion para cambiar de lugar el desplegable2 del conetender nav-bar al pegar_1 */
 function dropdown_2(){
     let winwidth = window.innerWidth;                                           /* Ejecuta la funcion */
-    let navmove = document.getElementById("nav-adicional")                      /* Id de la etiqueta que se movera*/
-    let space1 = document.getElementById("pegar_1")                             /* Id contenedor izquierda del logo*/
-    let space2 = document.getElementById("nav-bar")                             /* Id contenedor derecha de logo*/
-    if(500 > winwidth){
-        console.log("es menor que 500")                                         /*log para probar el evento*//*log*/
+    const navmove = document.getElementById("nav-adicional")                      /* Id de la etiqueta que se movera*/
+    const space1 = document.getElementById("pegar_1")                             /* Id contenedor izquierda del logo*/
+    const space2 = document.getElementById("nav-bar")                             /* Id contenedor derecha de logo*/
+    if(600 > winwidth){
+        console.log("es menor que 600")                                         /*log para probar el evento*//*log*/
         space1.appendChild(navmove)                                             /*mueve al espacio 2*/
         document.getElementById("nav-adicional").style.display ="grid";         /*alineados uno debajo de otro*/
     }
-    else if(500 <= winwidth){
-        console.log("es mayor que 500")                                         /*log para probar el evento*/
+    else if(600 <= winwidth){
+        console.log("es mayor que 600")                                         /*log para probar el evento*/
         space2.appendChild(navmove)                                             /*mueve al espacio 2*/
         document.getElementById("nav-adicional").style.display ="flex";         /*alineados uno al lado del otro*/
     }
