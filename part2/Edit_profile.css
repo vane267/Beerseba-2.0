@@ -3,35 +3,10 @@ body {
     margin: 0%;
     padding: 0%;
 }
-
-.barra-superior {
-    background: linear-gradient(to right, #FF5E62, #FF9966);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
-nav {        
-    border: none;
-    background: white;
-    margin-bottom: 1.5%;
-    display: flex;
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center;
-    height: auto;
-    max-width: 100%;
-    padding: 10px 0;
-}     
+ 
 
 form{
     margin-top: 20px;
-}
-
-.logo{
-    max-width: 100%;
-    height: auto;
 }
 
 hr{
@@ -207,17 +182,7 @@ a{
 
 
 @media screen and (max-width: 1000px) {
-    .logo{
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-    }
-    .logo img{
-        max-width: 70%;
-        margin-left: 80%;
-        margin-top: 0; margin-bottom: 0;
 
-    }
 
     .item00{
         text-align: center ;
@@ -313,16 +278,7 @@ a{
 
 
 @media screen and (max-width: 600px) {
-    .logo{
-        width: 70%;;
-        margin-right: 45%;
-        padding-top: 0;
-        margin-bottom: 10%;
-    }
-    .logo img{
-        max-width: 100%;
-    }
-
+ 
     .item00{
         text-align: center ;
         grid-column: 1 / span 3;

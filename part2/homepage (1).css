@@ -6,11 +6,6 @@ body {
     background-color: #fff;
 }
 
-/*Menuuu*/
-body {
-    font-family: "Lato", sans-serif;
-  }
-
 /*contenedor del dropdown,  */
 .navbar {
     background-color: white;
@@ -66,7 +61,7 @@ body {
 }
 
 .logo {
-    margin: 10px;
+    margin: 15px;
     padding-left: 100px;
 }
 
@@ -242,6 +237,7 @@ body {
 .profile-dropdown-list-item:hover{
     padding-left: 1.5rem;
     background-color: #ffeaec;
+    border-radius: 10px;
 }
 
 .profile-dropdown-list-item a{
@@ -448,9 +444,12 @@ h2 {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
-    
+    .logo{
+        padding-left: 100px;
+    }
+
     .nav-extra {
         padding-left: auto;
     }

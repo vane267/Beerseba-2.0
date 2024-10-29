@@ -1,8 +1,4 @@
 
-.navbar{
-    border-bottom: 1px solid rgb(212, 211, 211);
-}
-
 .heading {
     position: relative;
     display: flex;  /* Cambiado a flexbox */
@@ -18,6 +14,7 @@
     flex-direction: column;
 
 }
+
 
 h1 {
     font-size: 40px;
@@ -178,11 +175,6 @@ form{
 
 
 @media (max-width: 600px) {
-
-
-    .logo img{
-        width: 90%;
-    }
 
 
     .help{

@@ -1,18 +1,4 @@
 
-body {
-    font-family: "Lato", sans-serif;
-    background-color: #ededed;
-    margin: 0;
-    /*padding: 0;*/
-}
-
-.navbar{
-    border-bottom: 1px solid rgb(212, 211, 211);    
-}
-
-#pegar_1{
-    padding-left: 10%;
-}
 
 .main-container {
     padding: 10px;
