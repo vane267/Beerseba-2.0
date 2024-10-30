@@ -34,22 +34,22 @@ Al menos un caracter no alfanumérico*/
 const pattern_clave = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
 
 
-function alerta_error(f,g,h){
+function alerta_error(id,alerta,rege){
     /*Pinta el campo para validar */
-    var a = document.getElementById(f)
-    a.setAttribute("style", "background-color: white")
+    var idele = document.getElementById(id)
+    idele.setAttribute("style", "background-color: white")
 
     /*Devuelve en consola para validar */
-    var a = document.getElementById(f).value
-    var x = h.test(a)
-    var b = document.getElementById(g)
+    var idele = document.getElementById(id).value
+    var testreg = rege.test(idele)
+    var alertsh = document.getElementById(alerta)
 
-    if(x || a.length==0){
+    if(testreg || idele.length==0){
         console.log("mail correcto")
-        b.setAttribute("class","anular")
+        alertsh.setAttribute("class","anular")
     } else{
         console.log("mail incorrecto")
-        b.setAttribute("class","aparecer")
+        alertsh.setAttribute("class","aparecer")
     }
 
     /*Pinta el campo para validar */
@@ -171,4 +171,20 @@ function cargar_eventos(){
     /* borra la alerta el checkbox y el select */
     document.getElementById("id_box4").addEventListener("click", evento_7);    
     document.getElementById("id_seleccionar").addEventListener("input", evento_8);
+}
+
+/*Evento cargado desde el HTML*/
+function openNav() {    
+    document.getElementById("nav1").style.width = "250px";                      /*Modifica el contenedor del desplegable1*/
+    document.getElementById("nav1").style.height = "100%";                      /*Modifica el contenedor del desplegable1*/
+    document.getElementById("mySidebar").style.display ="grid";                 /*Muestra y ocupa un nuevo espacio del desplegable1*/
+    document.getElementById("barra-desplegable").style.visibility = "hidden";   /*Oculta y mantiene el espacio cuando se despliega boton ☰*/
+}
+
+/*Evento cargado desde el HTML*/
+function closeNav() {
+    document.getElementById("nav1").style.width = "0";                          /*Modifica el contenedor del desplegable1*/
+    document.getElementById("nav1").style.height = "0";                         /*Modifica el contenedor del desplegable1*/
+    document.getElementById("mySidebar").style.display = "none";                /*Oculta y no mantiene el espacio el desplegable1*/
+    document.getElementById("barra-desplegable").style.visibility = "visible";  /*Muestra y no ocupa un nuevo espacio cuando se despliega boton ☰*/
 }

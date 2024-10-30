@@ -1,3 +1,4 @@
+/*
 *{
     box-sizing: border-box; 
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,7 +24,7 @@ nav {
     background: white;
     margin-bottom: 1.5%;
     display: flex;
-    justify-content: center; /* Centramos horizontalmente */
+    justify-content: center;  Centramos horizontalmente 
     align-items: center;
     height: auto;
     max-width: 100%;
@@ -34,9 +35,15 @@ nav {
     max-width: 100%;
     height: auto;
 }
+*/
+.box0 {
+    background-color: #ededed;
+    padding-top: 15px;
+}
 
 .box2 {
     /*registrarse*/
+    
     margin-left: 0.5%;
     font-weight: lighter;
     width: 80%;
@@ -67,16 +74,16 @@ nav {
 }
 
 
-h3 {
+.box3 h3 {
     font-weight: bold;
 }
-p {
+.box3 p {
     font-size: 15px;
     font-weight: 250;
     margin-top: 2px;
     margin-left: 5px;
     margin-bottom: 25px;
-    color: #000000;
+    
 }
 
 .register{
@@ -85,11 +92,8 @@ p {
 
 }
 
-.prueba{
-    background-color: #FF5E62;
-}
-
 @media screen and (max-width: 600px) {
+    /*
     .logo{
         justify-content: center;
         margin-left: 10%;
@@ -97,7 +101,7 @@ p {
     .logo img{
         max-width: 80%;
     }
-
+    */
     .box3{
         margin-left: 02%;
         margin-right: 02%;
@@ -105,7 +109,7 @@ p {
 }
 
 .anular{
-    display: none !important;
+    display: none;
 }
 .aparecer{
     color: red;

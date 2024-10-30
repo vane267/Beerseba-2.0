@@ -6,29 +6,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="Registrarse.css">
+        <link rel="stylesheet" href="homepage (1).css">
         <script language="javascript" type="text/javascript" src="Registrarse.js"></script>
         <title>Registrarse</title>
 
     </head>
 
     <body id="cuerpo" onload="cargar_eventos();">
-        <div class="barra-superior">
-            <div class="contacto">
-                <span>+54 9 11 2338-4312</span> | 
-                <span>beersebaonline@gmail.com</span>
-            </div>
-            <div class="mayorista">
-                VENTA MAYORISTA TALLES ESPECIALES
-            </div>
+
+
+        <!-- Barra superior -->
+    <div class="barra-superior">
+        <div class="contacto">
+            <span>+54 9 11 2338-4312</span> | 
+            <span>beersebaonline@gmail.com</span>
         </div>
+        <div class="mayorista">
+            VENTA MAYORISTA TALLES ESPECIALES
+        </div>
+    </div>
 
-        <nav>
-            <div class="logo">
-                <a href="homepage (1).html"><img src="pics\image-removebg-preview.png" alt="logo"></a>
-            </div>
-        </nav>
+    <!-- Contenedor desplegable 1 -->
+    <nav id="nav1" class="navbar">
+      <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+      <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+        <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p id="pegar_1"></p> <br>
+        <a class="sidebar-a" href="homepage2.html">INICIO</a>
+        <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+        <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+      </div>
+    </nav>
 
-        <form class="box3">
+    <!-- Contenedor logo y desplegable 2 -->
+    <div class="logo1" id="nav-bar">       
+      <div class="logo">    
+        <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
+      </div>
+      <!-- Contenedor de buscar y desplegable 2-->
+      <div class="nav-extra" id="nav-adicional">
+
+        <!-- Contenedor -->
+        
+        <!-- Contenedor Iniciar sesion -->
+        
+        <!-- Contenedor Nombre y desplegable -->
+                 
+      </div>
+    </div>
+
+    <div class="box0">
+    <form class="box3">
             <h3>Regístrate para comprar</h3><br>
 
             <label for="cor01" class="box1">Email:</label><br>
@@ -81,8 +109,8 @@
 				</p>
 
             <button type="button" id="id_button" class="box2">Registrarme</button>
-        </form>
-    
+    </form>
+    </div>
     
     </body>
 </html>

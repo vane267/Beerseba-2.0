@@ -1,10 +1,11 @@
+
 body, html {
     background-color:#edededd0;
     margin: 0%;
     padding: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
-
+/*
 
 .navbar{
     margin-bottom: 20px;
@@ -15,7 +16,10 @@ body, html {
     height: auto;
 }
 
-
+*/
+.box1 {
+    height: 10px;
+}
 
 .box2 {
     /* Producto */
@@ -155,6 +159,9 @@ p {
 }
 
 @media screen and (max-width: 750px) {
+
+    /*
+
     .logo{
         justify-content: center;
         margin-left: 50%;
@@ -168,6 +175,7 @@ p {
         margin-top: 0;
     }
 
+    */
     h1{
         justify-content: center;
     }
