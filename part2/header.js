@@ -1,30 +1,18 @@
+let profileDropdownList = document.querySelector(".profile-dropdown-list");
+let btn = document.querySelector(".profile-dropdown-btn");
 
-function incluirNombre(){
-    w = window.innerWidth;
-    
-    a = document.getElementById("nav-adicional")
-    b = document.getElementById("pegar_1")
-    c = document.getElementById("nav-bar")
-    
+let classList = profileDropdownList.classList;
 
-    if(600 > w){
-        console.log("es menor que 600")
-        b.appendChild(a)
-        a.classList.replace("nav-extra", "nav-small");
+function toggle() {
+  classList.toggle("active");
+}
 
-    }
-    else if(600 <= w){
-        console.log("es mayor que 600")
-        c.appendChild(a)
-        a.classList.replace("nav-small", "nav-extra")    
-    }
-}   
+// Listen for a click anywhere on the page to close the dropdown
+window.addEventListener("click", ocultar);
 
-
-function cargar_eventos(){
-
-    incluirNombre()
-    window.addEventListener("resize",incluirNombre);
-    
- 
+function ocultar(event) {
+  // If the click was outside the button, close the dropdown
+  if (!btn.contains(event.target)) {
+    classList.remove("active");
+  }
 }

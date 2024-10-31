@@ -1,4 +1,5 @@
 
+
 /*Evento cargado desde el HTML*/
 function openNav() {    
     document.getElementById("nav1").style.width = "250px";                      /*Modifica el contenedor del desplegable1*/
@@ -57,6 +58,11 @@ function salirSesion(){
     window.location.href = "homepage (1).html";                                 /* Te lleva a la homepage (1) */
 }
 
+/*DROPDOWN PERFIL*/
+
+
+
+
 
 /*Eventos cargardos al iniciar el html */
 function cargar_eventos(){    
@@ -64,6 +70,7 @@ function cargar_eventos(){
     dropdown_2()                                                                /* Ejecuta la funcion */
     window.addEventListener("resize",dropdown_2);                               /* Evento que sondea el width de la ventana */
     document.getElementById("salir").addEventListener("click",salirSesion)      /* Evento que se ejecuta al hacer click*/
+
 }
 
 
