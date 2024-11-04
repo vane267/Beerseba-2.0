@@ -19,7 +19,7 @@ function closeNav() {
 
 /* Funcion para cambiar de lugar el desplegable2 del conetender nav-bar al pegar_1 */
 function dropdown_2(){
-    let winwidth = window.innerWidth;                                           /* Ejecuta la funcion */
+    const winwidth = window.innerWidth;                                           /* Ejecuta la funcion */
     const navmove = document.getElementById("nav-adicional")                      /* Id de la etiqueta que se movera*/
     const space1 = document.getElementById("pegar_1")                             /* Id contenedor izquierda del logo*/
     const space2 = document.getElementById("nav-bar")                             /* Id contenedor derecha de logo*/
