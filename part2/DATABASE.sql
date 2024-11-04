@@ -1,6 +1,6 @@
 
 SHOW DATABASES;
-USE carlost_berseeva2;
+USE beerseba;
 
 SHOW TABLES;
 
@@ -52,9 +52,20 @@ INSERT INTO Compra_Detalle (id, id_compra, id_producto_talle, cantidad, precio)
     VALUE (NULL, 1, 16, 2, 30000);
 
 
-SELECT USUARIO.nombre AS nombre,
-    Producto.nombre AS Producto,
-    Compra.fechahora AS Fecha, 
-    Compra_Detalle.cantidad AS Cantidad,
-    Compra_Detalle.precio AS Total 
+
+
+SELECT * FROM USUARIOS;
+SELECT c.fechahora, 
+        u.nombre, 
+        u.apellido, 
+        cd.cantidad, 
+        p.Nombre AS Producto, 
+        ptl.talle, 
+        cd.precio
+
+FROM compra c
+INNER JOIN USUARIOS u ON u.id = c.id_usuario 
+INNER JOIN Compra_Detalle cd ON c.id = cd.id_compra
+INNER JOIN Producto_talle ptl ON cd.Id_producto_talle = ptl.id
+INNER JOIN producto p ON p.id = ptl.id_producto; 
 

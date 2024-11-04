@@ -216,12 +216,8 @@ body {
 .profile-dropdown-list{
     visibility: hidden;
     position: absolute;
-<<<<<<< Updated upstream
     top: 35px;
-=======
-    top: 45px;
->>>>>>> Stashed changes
-    width: 220px;
+    width: 200px;
     right: 0;
     background-color: white;
     border-radius: 10px;
