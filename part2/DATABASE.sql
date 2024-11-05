@@ -45,7 +45,7 @@ UPDATE producto_talle SET stock = stock-1 WHERE id = 26;
     
 --CONSULTA DEL STOCK DE LOS PRODUCTOS
 
-SELECT  tp.tipo AS Tipo,
+SELECT  tp.tipo,
     p.nombre,
     ptalle.talle,
     ptalle.stock, 
@@ -103,8 +103,7 @@ FROM compra c
 INNER JOIN USUARIOS u ON u.id = c.id_usuario 
 INNER JOIN Compra_Detalle cd ON c.id = cd.id_compra
 INNER JOIN Producto_talle ptl ON cd.Id_producto_talle = ptl.id
-INNER JOIN producto p ON p.id = ptl.id_producto
-WHERE c.estado= 'entregado';
+INNER JOIN producto p ON p.id = ptl.id_producto;
 --le otrogamos un alias a la tabla para agilizar el proceso. Por ejemplo, en la linea 84 el alias es 'c' y refiere a compra.--
                                                             --de ahora en más, para referirmos a la tabla 'compra' se usara 'c'--
 
