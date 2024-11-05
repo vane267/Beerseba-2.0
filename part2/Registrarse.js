@@ -84,58 +84,58 @@ function evento_6(){
 function validar_todo(){
 
     /* valida el checkbox y el select */
-    var a = document.getElementById("id_seleccionar")
-    if (a.value=="0"){
-        var b = document.getElementById("alerta_seleccionar")
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_seleccionar")
+    if (idselect.value=="0"){
+        var aleselect = document.getElementById("alerta_seleccionar")
+        aleselect.setAttribute("class","aparecer")
     }
 
-    var a = document.getElementById("id_box4")
-    if (a.checked==false){
-        var b = document.getElementById("alerta_box")
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_box4")
+    if (idselect.checked==false){
+        var aleselect = document.getElementById("alerta_box")
+        aleselect.setAttribute("class","aparecer")
     }
 
     /* valida que no haya campos vacios */
-    var a = document.getElementById("id_mail").value
-    var b = document.getElementById("alerta_mail")
-    if(a==""){
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_mail").value
+    var aleselect = document.getElementById("alerta_mail")
+    if(idselect==""){
+        aleselect.setAttribute("class","aparecer")
     }
 
-    var a = document.getElementById("id_nombre").value
-    var b = document.getElementById("alerta_nombre")
-    if(a==""){
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_nombre").value
+    var aleselect = document.getElementById("alerta_nombre")
+    if(idselect==""){
+        aleselect.setAttribute("class","aparecer")
     }
 
-    var a = document.getElementById("id_apellido").value
-    var b = document.getElementById("alerta_apellido")
-    if(a==""){
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_apellido").value
+    var aleselect = document.getElementById("alerta_apellido")
+    if(idselect==""){
+        aleselect.setAttribute("class","aparecer")
     }
 
-    var a = document.getElementById("id_dni").value
-    var b = document.getElementById("alerta_dni")
-    if(a==""){
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_dni").value
+    var aleselect = document.getElementById("alerta_dni")
+    if(idselect==""){
+        aleselect.setAttribute("class","aparecer")
     }
 
-    var a = document.getElementById("id_celular").value
-    var b = document.getElementById("alerta_celular")
-    if(a==""){
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_celular").value
+    var aleselect = document.getElementById("alerta_celular")
+    if(idselect==""){
+        aleselect.setAttribute("class","aparecer")
     }
 
-    var a = document.getElementById("id_clave").value
-    var b = document.getElementById("alerta_clave")
-    if(a==""){
-        b.setAttribute("class","aparecer")
+    var idselect = document.getElementById("id_clave").value
+    var aleselect = document.getElementById("alerta_clave")
+    if(idselect==""){
+        aleselect.setAttribute("class","aparecer")
     }
 
     /* si existe algun clase "aparecer", envia una alerta */
-    a = document.getElementsByClassName("aparecer")
-    if (a.length==0){
+    idselect = document.getElementsByClassName("aparecer")
+    if (idselect.length==0){
         alert("Registro completado")
         window.location.href = "homepage2.html";
     } else{
@@ -157,7 +157,8 @@ function evento_8(){
 
 function cargar_eventos(){
 
-    /* alertas de mail, nombre, apellido, dni, celular y clave con regex*/
+    /* alertas de mail, nombre, apellido, dni, celular y clave con regex
+    event blur = An element loses focus */
     document.getElementById("id_mail").addEventListener("blur", evento_1);
     document.getElementById("id_nombre").addEventListener("blur", evento_2);
     document.getElementById("id_apellido").addEventListener("blur", evento_3);
