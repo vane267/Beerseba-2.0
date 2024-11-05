@@ -3,7 +3,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     // Validación de Nombre del Producto
     const nombreProducto = document.getElementById("nom01");
-    if (nombreProducto.value.trim() === "") {
+    if (nombreProducto.value === "") {
         alert("El nombre del producto es obligatorio.");
         nombreProducto.focus();
         return;
@@ -11,7 +11,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     // Validación de Descripción
     const descripcion = document.getElementById("desc01");
-    if (descripcion.value.trim() === "") {
+    if (descripcion.value === "") {
         alert("La descripción es obligatoria.");
         descripcion.focus();
         return;

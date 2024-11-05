@@ -4,6 +4,8 @@ USE beerseba;
 
 SHOW TABLES;
 
+SHOW CREATE TABLE USUARIOS;
+
 SELECT * FROM USUARIOS;
 
 INSERT INTO USUARIOS (id, nombre, apellido, email, pass, tipo_usuario)
@@ -12,6 +14,8 @@ INSERT INTO USUARIOS (id, nombre, apellido, email, pass, tipo_usuario)
     (NULL, 'MAELO', 'RUIZ', 'RUIZOM@gmail.com', '123456', 'cliente'),
     (NULL, 'JUAN LUIS', 'GUERRA', 'BILIRRUBINA@gmail.com', '123456', 'cliente'),
     (NULL, 'ENRIQUE', 'IGLESIAS', 'ENRIQUESITO@gmail.com', '123456', 'cliente');
+
+UPDATE USUARIOS SET celular=1199995555 WHERE id=1;
 
 
 SELECT * FROM Tipo_Producto;
@@ -54,6 +58,7 @@ FROM producto p
 INNER JOIN tipo_producto tp ON tp.id = p.id_tipo_producto
 INNER JOIN producto_talle ptalle ON ptalle.id_producto = p.id;
 
+
 -------------------------------------
 
 SELECT * FROM Compra;
@@ -75,6 +80,7 @@ UPDATE Compra SET Estado='En Proceso' WHERE id=3;
 
 
 SELECT * FROM Compra_Detalle;
+
 
 INSERT INTO Compra_Detalle (id, id_compra, id_producto_talle, cantidad, precio)   }
                     VALUE (NULL, 4, 23, 1, 15000);
