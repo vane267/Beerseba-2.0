@@ -10,7 +10,7 @@ form{
 }
 
 hr{
-    padding: 0;
+    font-weight: bolder;
 }
 
 .box2 {
@@ -31,7 +31,7 @@ hr{
 }
 .box3 {
     display: grid;
-    background-color: #ffffff;
+    background-color: white;
     gap: 30px;
     padding: 10px;
     padding-right: 30px;
@@ -39,13 +39,12 @@ hr{
     margin-left: 9%;
     margin-bottom: 2%;
     border-color: black;
-    border-style: dotted;
     border-radius: 15px;
     text-align: left;
-    background-color: white;
-    border: none;
     font-size: small;
     width: 80%;
+    box-shadow: 0px 2px 8px 0px #a5a5a5be;
+
     
 }
 
@@ -145,30 +144,6 @@ label{
 }
 
 
-.w3-input:focus{
-    border: transparent;
-    border-bottom: 1px solid linear-gradient(to right, #FF5E62, #FF9966) ;
-}
-
-
-.w3-input :-ms-input-placeholder {
-    color: rgb(255, 0, 0);
-    border-color: transparent;
-}
-
-.w3-input::before{
-    content: "";
-	height: 1px;
-	width: 0%;
-	bottom: 0;
-	position: absolute;
-	background: linear-gradient(to right, #FF5E62, #FF9966);
-	transition: 0.3s ease width;
-	left: 0;
-}
-input:focus~.barra::before{
-	width: 100%;
-}
 
 p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -233,7 +208,6 @@ a{
             margin-bottom: 2%;
             border-radius: 15px;
             text-align: left;
-            background-color: white;
             border: none;
             font-size: small;
             width: 80%;
@@ -315,7 +289,6 @@ a{
             margin-bottom: 2%;
             border-radius: 15px;
             text-align: left;
-            background-color: white;
             border: none;
             font-size: small;
             width: 80%;
