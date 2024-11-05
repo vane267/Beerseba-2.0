@@ -8,14 +8,10 @@ SHOW CREATE TABLE USUARIOS;
 
 SELECT * FROM USUARIOS;
 
-INSERT INTO USUARIOS (id, nombre, apellido, email, pass, tipo_usuario)
-    VALUE (NULL, 'VALERIA', 'MASSA', 'VALEMASSITA@gmail.com', '123456', 'cliente'),
-    (NULL, 'JUAN', 'CASERES', 'CASITAJ@gmail.com', '123456', 'cliente'),
-    (NULL, 'MAELO', 'RUIZ', 'RUIZOM@gmail.com', '123456', 'cliente'),
-    (NULL, 'JUAN LUIS', 'GUERRA', 'BILIRRUBINA@gmail.com', '123456', 'cliente'),
-    (NULL, 'ENRIQUE', 'IGLESIAS', 'ENRIQUESITO@gmail.com', '123456', 'cliente');
+INSERT INTO USUARIOS (id, nombre, apellido, email, pass, tipo_usuario, tipo_doc, num_doc, celular)
+    VALUE (NULL, 'SOFIA', 'PRINCESS', 'PRINCESSSOF@gmail.com', '123456', 'cliente', 'Pasaporte', 12, 1198200200);
 
-UPDATE USUARIOS SET celular=1199995555 WHERE id=1;
+UPDATE USUARIOS SET pass=67889 WHERE id=1;
 
 
 SELECT * FROM Tipo_Producto;
@@ -107,7 +103,8 @@ FROM compra c
 INNER JOIN USUARIOS u ON u.id = c.id_usuario 
 INNER JOIN Compra_Detalle cd ON c.id = cd.id_compra
 INNER JOIN Producto_talle ptl ON cd.Id_producto_talle = ptl.id
-INNER JOIN producto p ON p.id = ptl.id_producto;
+INNER JOIN producto p ON p.id = ptl.id_producto
+WHERE c.estado= 'entregado';
 --le otrogamos un alias a la tabla para agilizar el proceso. Por ejemplo, en la linea 84 el alias es 'c' y refiere a compra.--
                                                             --de ahora en más, para referirmos a la tabla 'compra' se usara 'c'--
 
