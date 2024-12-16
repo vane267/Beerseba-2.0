@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Compra</title>
+      <link rel="stylesheet" href="../static/homepage/homepage.css">
+      <link rel="stylesheet" href="../static/purchase/purchase.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <script language="javascript" type="text/javascript" src="../static/homepage/homepage.js"></script>
+      <script language="javascript" type="text/javascript" src="../static/purchase/purchase.js"></script>
+
+    </head>
+
+<body id="cuerpo_1" onload="cargar_eventos_purchase()">
+  
+  <div id="java1">
+  </div>
+
+  <div class="nav-extra" id="nav-adicional">
+    <input type="search" placeholder="Buscar">
+    {% if  session.get('nombre')!=None %}        
+    <div class="profile-dropdown" id="parte2">
+            <!-- Nombre e imagen -->
+            <div class="profile-dropdown-btn" >
+              <div class="profile-img">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <span>
+                  {{session.get('nombre')}}
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <!-- Desplegable 2 -->
+            <div class="profile-dropdown-list">
+              <div class="profile-dropdown-list-item">
+                <a href="/editprofile">
+                  <i class="fa-regular fa-user"></i>
+                  Editar Perfil
+                </a>
+              </div> 
+
+              <div class="profile-dropdown-list-item">
+                <a href="/favorites">
+                  <i class="fas fa-heart"></i>
+                  Favoritos
+                </a>
+              </div>
+    
+              <div class="profile-dropdown-list-item">
+              <a href="/mypurchases">
+                <i class="fa-solid fa-chart-line"></i>
+                  Mis Compras
+                </a>
+              </div>
+    
+              <div class="profile-dropdown-list-item">
+                <a href="/helpsupport">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Ayuda & Soporte
+                </a>
+              </div>
+              <hr/>
+    
+              <div class="profile-dropdown-list-item">
+                <a href="/logout" id="salir">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Salir
+                </a>
+              </div>
+            </div>
+    </div>
+    {% else %}        
+    <div class="cont-parte1" id="parte1">
+      <a href="/signup">Crear cuenta</a> | <a href="/loginuser">Iniciar sesión</a>
+    </div>
+    {% endif %}
+  </div>
+      
+  <div class="box1">
+  </div>
+
+  <div class="box2">  
+      <h1>Pantalon Recto de Bengalina</h1>
+      <div class="box2_1">
+          <img src="pics/Recto de Bengalina .jpg" alt="compra">
+      </div>            
+
+      <div class="box2_2">
+          <p><span class="span01">Color: </span>Negro</p>
+          <p><span class="span01">Talle: </span>8</p>
+          <p><span class="span01">Cantidad: </span>2</p>
+      </div>
+          
+                      
+  </div>
+
+  <div class="box3">
+
+    <div class="box4">
+      <h2>Resumen </h2>
+      <p>Subtotal<span class="span02">15.000ARS</span></p>
+      <p>Código promocional<span class="span03">"OPENER"</span></p>
+      <p>Gastos de envío<span class="span02"> Gratis</span></p>
+      <p class="span01">Total<span class="span02">14.500ARS</span></p>
+      
+      <a href="homepage (1).html"><input type="button" value="Realizar pedido" class="input" onclick="validacion()"></a>
+      <p class="p01"> Al hacer click en 'Realizar pedido', confirmo haber leído y aceptado los <span class="span04">términos y condiciones.</span></p>
+    </div>
+      
+    <div class="box5">
+        <p class="p01">Beerseba mantiene seguros tu información y tu pago</p>
+    </div>
+      
+  </div>
+
+</body>
+</html>
